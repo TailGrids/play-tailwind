@@ -2346,6 +2346,10 @@ body {
     height: 45%;
   }
 
+  .lg\:max-h-full{
+    max-height: 100%;
+  }
+
   .lg\:w-full{
     width: 100%;
   }
