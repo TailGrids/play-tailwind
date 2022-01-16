@@ -12,6 +12,12 @@
     />
     <link rel="stylesheet" href="assets/css/animate.css" />
     <link rel="stylesheet" href="assets/css/tailwind.css" />
+
+    <!-- ==== WOW JS ==== -->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </head>
   <body>
     <!-- ====== Navbar Section Start -->
@@ -31,7 +37,7 @@
       <div class="container">
         <div class="flex -mx-4 items-center justify-between relative">
           <div class="px-4 w-60 max-w-full">
-            <a href="index.html" class="w-full block py-5">
+            <a href="index.html" class="navbar-logo w-full block py-5">
               <img
                 src="assets/images/logo/logo-white.svg"
                 alt="logo"
@@ -122,7 +128,7 @@
                         lg:py-6 lg:inline-flex lg:px-0
                         flex
                         mx-8
-                        lg:mr-0 lg:ml-8
+                        lg:mr-0 lg:ml-7
                         xl:ml-12
                       "
                     >
@@ -143,7 +149,7 @@
                         lg:py-6 lg:inline-flex lg:px-0
                         flex
                         mx-8
-                        lg:mr-0 lg:ml-8
+                        lg:mr-0 lg:ml-7
                         xl:ml-12
                       "
                     >
@@ -164,7 +170,7 @@
                         lg:py-6 lg:inline-flex lg:px-0
                         flex
                         mx-8
-                        lg:mr-0 lg:ml-8
+                        lg:mr-0 lg:ml-7
                         xl:ml-12
                       "
                     >
@@ -185,7 +191,7 @@
                         lg:py-6 lg:inline-flex lg:px-0
                         flex
                         mx-8
-                        lg:mr-0 lg:ml-8
+                        lg:mr-0 lg:ml-7
                         xl:ml-12
                       "
                     >
@@ -525,7 +531,7 @@
                   to-transparent
                 "
               >
-                <div class="flex flex-wrap items-center p-8 pb-4">
+                <div class="flex flex-wrap items-center p-4 sm:p-8 pb-4">
                   <div class="flex items-center mb-4 mr-5 md:mr-10">
                     <div class="w-10 h-10 rounded-full overflow-hidden mr-4">
                       <img
@@ -657,7 +663,7 @@
                       text-dark text-[26px]
                       sm:text-3xl
                       md:text-4xl
-                      leading-normal
+                      leading-snug
                       sm:leading-snug
                       md:leading-snug
                       mb-6
@@ -679,12 +685,12 @@
                     "
                     data-wow-delay=".1s"
                   >
-                    There’s a time and place for everything… including asking
+                    There's a time and place for everything… including asking
                     for reviews. For instance: you should not asking for a
                     review on your checkout page. The sole purpose of this page
                     is to guide your customer to complete their purchase, and
                     this means that the page should be as minimalist and
-                    pared-down possible. You don’t want to have any unnecessary
+                    pared-down possible. You don't want to have any unnecessary
                     elements or Call To Actions.
                   </p>
                   <p
@@ -697,12 +703,12 @@
                     "
                     data-wow-delay=".1s"
                   >
-                    There’s a time and place for everything… including asking
+                    There's a time and place for everything… including asking
                     for reviews. For instance: you should not asking for a
                     review on your checkout page. The sole purpose of this page
                     is to guide your customer to complete their purchase, and
                     this means that the page should be as minimalist and
-                    pared-down possible. You don’t want to have any unnecessary
+                    pared-down possible. You don't want to have any unnecessary
                     elements or Call To Actions.
                   </p>
                   <h3
@@ -741,7 +747,9 @@
                       rounded
                       overflow-hidden
                       relative
-                      p-10
+                      py-8
+                      px-6
+                      sm:p-10
                       md:px-[60px]
                       text-center
                       z-10
@@ -2619,7 +2627,6 @@
     <!-- ====== Back To Top End -->
 
     <!-- ====== All Scripts -->
-    <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
 </html>

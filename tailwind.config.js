@@ -1,7 +1,6 @@
 module.exports = {
-  purge: ["./*.html", "./assets/**/*.js"],
-  mode: "jit",
-  darkMode: false, // or 'media' or 'class'
+  content: ["./*.html", "./assets/**/*.js"],
+
   theme: {
     screens: {
       sm: "540px",

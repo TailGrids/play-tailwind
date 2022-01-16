@@ -1,84 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-/*! tailwindcss v2.2.19 | MIT License | https://tailwindcss.com */
-
-/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-
 /*
-Document
-========
+! tailwindcss v3.0.15 | MIT License | https://tailwindcss.com
 */
 
-/**
-Use a better box model (opinionated).
+/*
+1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
+2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
-}
-
-/**
-Use a more readable tab size (opinionated).
-*/
-
-html {
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
-}
-
-/**
-1. Correct the line height in all browsers.
-2. Prevent adjustments of font size after orientation changes in iOS.
-*/
-
-html {
-  line-height: 1.15;
   /* 1 */
-  -webkit-text-size-adjust: 100%;
+  border-width: 0;
+  /* 2 */
+  border-style: solid;
+  /* 2 */
+  border-color: #e5e7eb;
   /* 2 */
 }
 
+::before,
+::after {
+  --tw-content: '';
+}
+
 /*
-Sections
-========
+1. Use a consistent sensible line-height in all browsers.
+2. Prevent adjustments of font size after orientation changes in iOS.
+3. Use a more readable tab size.
+4. Use the user's configured `sans` font-family by default.
 */
 
-/**
-Remove the margin in all browsers.
+html {
+  line-height: 1.5;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+     tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+}
+
+/*
+1. Remove the margin in all browsers.
+2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
 */
 
 body {
   margin: 0;
-}
-
-/**
-Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-*/
-
-body {
-  font-family:
-		system-ui,
-		-apple-system, /* Firefox supports this but not yet `system-ui` */
-		'Segoe UI',
-		Roboto,
-		Helvetica,
-		Arial,
-		sans-serif,
-		'Apple Color Emoji',
-		'Segoe UI Emoji';
+  /* 1 */
+  line-height: inherit;
+  /* 2 */
 }
 
 /*
-Grouping content
-================
-*/
-
-/**
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+3. Ensure horizontal rules are visible by default.
 */
 
 hr {
@@ -86,23 +71,43 @@ hr {
   /* 1 */
   color: inherit;
   /* 2 */
+  border-top-width: 1px;
+  /* 3 */
 }
 
 /*
-Text-level semantics
-====================
-*/
-
-/**
 Add the correct text decoration in Chrome, Edge, and Safari.
 */
 
-abbr[title] {
+abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
 
-/**
+/*
+Remove the default font size and weight for headings.
+*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*
+Reset links to optimize for opt-in styling instead of opt-out.
+*/
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/*
 Add the correct font weight in Edge and Safari.
 */
 
@@ -111,28 +116,22 @@ strong {
   font-weight: bolder;
 }
 
-/**
-1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
-2. Correct the odd 'em' font sizing in all browsers.
+/*
+1. Use the user's configured `mono` font family by default.
+2. Correct the odd `em` font sizing in all browsers.
 */
 
 code,
 kbd,
 samp,
 pre {
-  font-family:
-		ui-monospace,
-		SFMono-Regular,
-		Consolas,
-		'Liberation Mono',
-		Menlo,
-		monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
 }
 
-/**
+/*
 Add the correct font size in all browsers.
 */
 
@@ -140,8 +139,8 @@ small {
   font-size: 80%;
 }
 
-/**
-Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+/*
+Prevent `sub` and `sup` elements from affecting the line height in all browsers.
 */
 
 sub,
@@ -161,13 +160,9 @@ sup {
 }
 
 /*
-Tabular data
-============
-*/
-
-/**
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+3. Remove gaps between table borders by default.
 */
 
 table {
@@ -175,16 +170,14 @@ table {
   /* 1 */
   border-color: inherit;
   /* 2 */
+  border-collapse: collapse;
+  /* 3 */
 }
 
 /*
-Forms
-=====
-*/
-
-/**
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
+3. Remove default padding in all browsers.
 */
 
 button,
@@ -196,25 +189,28 @@ textarea {
   /* 1 */
   font-size: 100%;
   /* 1 */
-  line-height: 1.15;
+  line-height: inherit;
+  /* 1 */
+  color: inherit;
   /* 1 */
   margin: 0;
   /* 2 */
+  padding: 0;
+  /* 3 */
 }
 
-/**
+/*
 Remove the inheritance of text transform in Edge and Firefox.
-1. Remove the inheritance of text transform in Firefox.
 */
 
 button,
 select {
-  /* 1 */
   text-transform: none;
 }
 
-/**
-Correct the inability to style clickable types in iOS and Safari.
+/*
+1. Correct the inability to style clickable types in iOS and Safari.
+2. Remove default button styles.
 */
 
 button,
@@ -222,43 +218,30 @@ button,
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button;
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
 }
 
-/**
-Remove the inner border and padding in Firefox.
-*/
-
-::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
-}
-
-/**
-Restore the focus styles unset by the previous rule.
+/*
+Use the modern Firefox focus style for all focusable elements.
 */
 
 :-moz-focusring {
-  outline: 1px dotted ButtonText;
+  outline: auto;
 }
 
-/**
-Remove the additional ':invalid' styles in Firefox.
-See: https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737
+/*
+Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
 */
 
 :-moz-ui-invalid {
   box-shadow: none;
 }
 
-/**
-Remove the padding so developers are not caught out when they zero out 'fieldset' elements in all browsers.
-*/
-
-legend {
-  padding: 0;
-}
-
-/**
+/*
 Add the correct vertical alignment in Chrome and Firefox.
 */
 
@@ -266,7 +249,7 @@ progress {
   vertical-align: baseline;
 }
 
-/**
+/*
 Correct the cursor style of increment and decrement buttons in Safari.
 */
 
@@ -275,7 +258,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
   height: auto;
 }
 
-/**
+/*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
@@ -287,7 +270,7 @@ Correct the cursor style of increment and decrement buttons in Safari.
   /* 2 */
 }
 
-/**
+/*
 Remove the inner padding in Chrome and Safari on macOS.
 */
 
@@ -295,9 +278,9 @@ Remove the inner padding in Chrome and Safari on macOS.
   -webkit-appearance: none;
 }
 
-/**
+/*
 1. Correct the inability to style clickable types in iOS and Safari.
-2. Change font properties to 'inherit' in Safari.
+2. Change font properties to `inherit` in Safari.
 */
 
 ::-webkit-file-upload-button {
@@ -308,11 +291,6 @@ Remove the inner padding in Chrome and Safari on macOS.
 }
 
 /*
-Interactive
-===========
-*/
-
-/*
 Add the correct display in Chrome and Safari.
 */
 
@@ -320,15 +298,9 @@ summary {
   display: list-item;
 }
 
-/**
- * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
- * A thin layer on top of normalize.css that provides a starting point more
- * suitable for web applications.
- */
-
-/**
- * Removes the default spacing and border for appropriate elements.
- */
+/*
+Removes the default spacing and border for appropriate elements.
+*/
 
 blockquote,
 dl,
@@ -346,221 +318,80 @@ pre {
   margin: 0;
 }
 
-button {
-  background-color: transparent;
-  background-image: none;
-}
-
 fieldset {
   margin: 0;
   padding: 0;
 }
 
+legend {
+  padding: 0;
+}
+
 ol,
-ul {
+ul,
+menu {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/**
- * Tailwind custom reset styles
- */
-
-/**
- * 1. Use the user's configured `sans` font-family (with Tailwind's default
- *    sans-serif font stack as a fallback) as a sane default.
- * 2. Use Tailwind's default "normal" line-height so the user isn't forced
- *    to override it to ensure consistency even when using the default theme.
- */
-
-html {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  /* 1 */
-  line-height: 1.5;
-  /* 2 */
-}
-
-/**
- * Inherit font-family and line-height from `html` so users can set them as
- * a class directly on the `html` element.
- */
-
-body {
-  font-family: inherit;
-  line-height: inherit;
-}
-
-/**
- * 1. Prevent padding and border from affecting element width.
- *
- *    We used to set this in the html element and inherit from
- *    the parent element for everything else. This caused issues
- *    in shadow-dom-enhanced elements like <details> where the content
- *    is wrapped by a div with box-sizing set to `content-box`.
- *
- *    https://github.com/mozdevs/cssremedy/issues/4
- *
- *
- * 2. Allow adding a border to an element by just adding a border-width.
- *
- *    By default, the way the browser specifies that an element should have no
- *    border is by setting it's border-style to `none` in the user-agent
- *    stylesheet.
- *
- *    In order to easily add borders to elements by just setting the `border-width`
- *    property, we change the default border-style for all elements to `solid`, and
- *    use border-width to hide them instead. This way our `border` utilities only
- *    need to set the `border-width` property instead of the entire `border`
- *    shorthand, making our border utilities much more straightforward to compose.
- *
- *    https://github.com/tailwindcss/tailwindcss/pull/116
- */
-
-*,
-::before,
-::after {
-  box-sizing: border-box;
-  /* 1 */
-  border-width: 0;
-  /* 2 */
-  border-style: solid;
-  /* 2 */
-  border-color: currentColor;
-  /* 2 */
-}
-
 /*
- * Ensure horizontal rules are visible by default
- */
-
-hr {
-  border-top-width: 1px;
-}
-
-/**
- * Undo the `border-style: none` reset that Normalize applies to images so that
- * our `border-{width}` utilities have the expected effect.
- *
- * The Normalize reset is unnecessary for us since we default the border-width
- * to 0 on all elements.
- *
- * https://github.com/tailwindcss/tailwindcss/issues/362
- */
-
-img {
-  border-style: solid;
-}
+Prevent resizing textareas horizontally by default.
+*/
 
 textarea {
   resize: vertical;
 }
 
+/*
+1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+2. Set the default placeholder color to the user's configured gray 400 color.
+*/
+
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
+  /* 1 */
   color: #9ca3af;
+  /* 2 */
 }
 
 input:-ms-input-placeholder, textarea:-ms-input-placeholder {
   opacity: 1;
+  /* 1 */
   color: #9ca3af;
+  /* 2 */
 }
 
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
+  /* 1 */
   color: #9ca3af;
+  /* 2 */
 }
+
+/*
+Set the default cursor for buttons.
+*/
 
 button,
 [role="button"] {
   cursor: pointer;
 }
 
-/**
- * Override legacy focus reset from Normalize with modern Firefox focus styles.
- *
- * This is actually an improvement over the new defaults in Firefox in our testing,
- * as it triggers the better focus styles even for links, which still use a dotted
- * outline in Firefox by default.
- */
+/*
+Make sure disabled buttons don't get the pointer cursor.
+*/
 
-:-moz-focusring {
-  outline: auto;
+:disabled {
+  cursor: default;
 }
 
-table {
-  border-collapse: collapse;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
-/**
- * Reset links to optimize for opt-in styling instead of
- * opt-out.
- */
-
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-/**
- * Reset form element properties that are easy to forget to
- * style explicitly so you don't inadvertently introduce
- * styles that deviate from your design system. These styles
- * supplement a partial reset that is already applied by
- * normalize.css.
- */
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-}
-
-/**
- * Use the configured 'mono' font family for elements that
- * are expected to be rendered with a monospace font, falling
- * back to the system monospace stack if there is no configured
- * 'mono' font family.
- */
-
-pre,
-code,
-kbd,
-samp {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-/**
- * 1. Make replaced elements `display: block` by default as that's
- *    the behavior you want almost all of the time. Inspired by
- *    CSS Remedy, with `svg` added as well.
- *
- *    https://github.com/mozdevs/cssremedy/issues/14
- * 
- * 2. Add `vertical-align: middle` to align replaced elements more
- *    sensibly by default when overriding `display` by adding a
- *    utility like `inline`.
- *
- *    This can trigger a poorly considered linting error in some
- *    tools but is included by design.
- * 
- *    https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210
- */
+/*
+1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+   This can trigger a poorly considered lint error in some tools but is included by design.
+*/
 
 img,
 svg,
@@ -576,12 +407,9 @@ object {
   /* 2 */
 }
 
-/**
- * Constrain images and videos to the parent width and preserve
- * their intrinsic aspect ratio.
- *
- * https://github.com/mozdevs/cssremedy/issues/14
- */
+/*
+Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+*/
 
 img,
 video {
@@ -589,9 +417,9 @@ video {
   height: auto;
 }
 
-/**
- * Ensure the default browser behavior of the `hidden` attribute.
- */
+/*
+Ensure the default browser behavior of the `hidden` attribute.
+*/
 
 [hidden] {
   display: none;
@@ -605,29 +433,41 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  --tw-border-opacity: 1;
-  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+  --tw-pan-x:  ;
+  --tw-pan-y:  ;
+  --tw-pinch-zoom:  ;
+  --tw-scroll-snap-strictness: proximity;
+  --tw-ordinal:  ;
+  --tw-slashed-zero:  ;
+  --tw-numeric-figure:  ;
+  --tw-numeric-spacing:  ;
+  --tw-numeric-fraction:  ;
+  --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgba(59, 130, 246, 0.5);
+  --tw-ring-color: rgb(59 130 246 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
-  --tw-blur: var(--tw-empty,/*!*/ /*!*/);
-  --tw-brightness: var(--tw-empty,/*!*/ /*!*/);
-  --tw-contrast: var(--tw-empty,/*!*/ /*!*/);
-  --tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
-  --tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-invert: var(--tw-empty,/*!*/ /*!*/);
-  --tw-saturate: var(--tw-empty,/*!*/ /*!*/);
-  --tw-sepia: var(--tw-empty,/*!*/ /*!*/);
-  --tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
-  --tw-filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+  --tw-shadow-colored: 0 0 #0000;
+  --tw-blur:  ;
+  --tw-brightness:  ;
+  --tw-contrast:  ;
+  --tw-grayscale:  ;
+  --tw-hue-rotate:  ;
+  --tw-invert:  ;
+  --tw-saturate:  ;
+  --tw-sepia:  ;
+  --tw-drop-shadow:  ;
+  --tw-backdrop-blur:  ;
+  --tw-backdrop-brightness:  ;
+  --tw-backdrop-contrast:  ;
+  --tw-backdrop-grayscale:  ;
+  --tw-backdrop-hue-rotate:  ;
+  --tw-backdrop-invert:  ;
+  --tw-backdrop-opacity:  ;
+  --tw-backdrop-saturate:  ;
+  --tw-backdrop-sepia:  ;
 }
 
 .container{
@@ -1108,26 +948,26 @@ video {
 
 .-translate-y-1\/2{
   --tw-translate-y: -50%;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-45{
   --tw-rotate: 45deg;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-\[25deg\]{
   --tw-rotate: 25deg;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .rotate-180{
   --tw-rotate: 180deg;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform{
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -1168,6 +1008,10 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .rounded-lg{
@@ -1237,7 +1081,7 @@ video {
 
 .border-white{
   --tw-border-opacity: 1;
-  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .border-transparent{
@@ -1246,27 +1090,27 @@ video {
 
 .border-\[\#F2F3F8\]{
   --tw-border-opacity: 1;
-  border-color: rgba(242, 243, 248, var(--tw-border-opacity));
+  border-color: rgb(242 243 248 / var(--tw-border-opacity));
 }
 
 .border-\[\#f1f1f1\]{
   --tw-border-opacity: 1;
-  border-color: rgba(241, 241, 241, var(--tw-border-opacity));
+  border-color: rgb(241 241 241 / var(--tw-border-opacity));
 }
 
 .border-primary{
   --tw-border-opacity: 1;
-  border-color: rgba(48, 86, 211, var(--tw-border-opacity));
+  border-color: rgb(48 86 211 / var(--tw-border-opacity));
 }
 
 .border-\[\#D4DEFF\]{
   --tw-border-opacity: 1;
-  border-color: rgba(212, 222, 255, var(--tw-border-opacity));
+  border-color: rgb(212 222 255 / var(--tw-border-opacity));
 }
 
 .border-\[\#F3F4FE\]{
   --tw-border-opacity: 1;
-  border-color: rgba(243, 244, 254, var(--tw-border-opacity));
+  border-color: rgb(243 244 254 / var(--tw-border-opacity));
 }
 
 .border-opacity-40{
@@ -1283,77 +1127,72 @@ video {
 
 .bg-white{
   --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-primary{
   --tw-bg-opacity: 1;
-  background-color: rgba(48, 86, 211, var(--tw-bg-opacity));
+  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#f5f8ff\]{
   --tw-bg-opacity: 1;
-  background-color: rgba(245, 248, 255, var(--tw-bg-opacity));
-}
-
-.bg-dark{
-  --tw-bg-opacity: 1;
-  background-color: rgba(9, 14, 52, var(--tw-bg-opacity));
-}
-
-.bg-\[\#f3f4fe\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 254, var(--tw-bg-opacity));
-}
-
-.bg-\[\#13C296\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(19, 194, 150, var(--tw-bg-opacity));
-}
-
-.bg-secondary{
-  --tw-bg-opacity: 1;
-  background-color: rgba(19, 194, 150, var(--tw-bg-opacity));
-}
-
-.bg-\[\#f3f4ff\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(243, 244, 255, var(--tw-bg-opacity));
-}
-
-.bg-\[\#afb2b5\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(175, 178, 181, var(--tw-bg-opacity));
-}
-
-.bg-\[\#F4F7FF\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(244, 247, 255, var(--tw-bg-opacity));
-}
-
-.bg-\[\#FCFDFE\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(252, 253, 254, var(--tw-bg-opacity));
-}
-
-.bg-\[\#4064AC\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(64, 100, 172, var(--tw-bg-opacity));
-}
-
-.bg-\[\#1C9CEA\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(28, 156, 234, var(--tw-bg-opacity));
-}
-
-.bg-\[\#D64937\]{
-  --tw-bg-opacity: 1;
-  background-color: rgba(214, 73, 55, var(--tw-bg-opacity));
+  background-color: rgb(245 248 255 / var(--tw-bg-opacity));
 }
 
 .bg-black{
   --tw-bg-opacity: 1;
-  background-color: rgba(33, 43, 54, var(--tw-bg-opacity));
+  background-color: rgb(33 43 54 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f4fe\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 254 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#13C296\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 194 150 / var(--tw-bg-opacity));
+}
+
+.bg-secondary{
+  --tw-bg-opacity: 1;
+  background-color: rgb(19 194 150 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f3f4ff\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#afb2b5\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(175 178 181 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F4F7FF\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 247 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FCFDFE\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 253 254 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#4064AC\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(64 100 172 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#1C9CEA\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 156 234 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#D64937\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(214 73 55 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20{
@@ -1374,12 +1213,12 @@ video {
 
 .from-dark-700{
   --tw-gradient-from: #090e34b3;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(9, 14, 52, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(9 14 52 / 0));
 }
 
 .from-primary{
   --tw-gradient-from: #3056D3;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(48, 86, 211, 0));
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(48 86 211 / 0));
 }
 
 .to-transparent{
@@ -1418,6 +1257,10 @@ video {
 
 .p-10{
   padding: 2.5rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .px-4{
@@ -1523,6 +1366,11 @@ video {
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+}
+
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pr-16{
@@ -1687,17 +1535,17 @@ video {
 
 .text-dark{
   --tw-text-opacity: 1;
-  color: rgba(9, 14, 52, var(--tw-text-opacity));
+  color: rgb(9 14 52 / var(--tw-text-opacity));
 }
 
 .text-body-color{
   --tw-text-opacity: 1;
-  color: rgba(99, 115, 129, var(--tw-text-opacity));
+  color: rgb(99 115 129 / var(--tw-text-opacity));
 }
 
 .text-white{
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-dark-700{
@@ -1706,77 +1554,77 @@ video {
 
 .text-\[\#f3f4fe\]{
   --tw-text-opacity: 1;
-  color: rgba(243, 244, 254, var(--tw-text-opacity));
+  color: rgb(243 244 254 / var(--tw-text-opacity));
 }
 
 .text-\[\#dddddd\]{
   --tw-text-opacity: 1;
-  color: rgba(221, 221, 221, var(--tw-text-opacity));
+  color: rgb(221 221 221 / var(--tw-text-opacity));
 }
 
 .text-primary{
   --tw-text-opacity: 1;
-  color: rgba(48, 86, 211, var(--tw-text-opacity));
+  color: rgb(48 86 211 / var(--tw-text-opacity));
 }
 
 .text-\[\#cdced6\]{
   --tw-text-opacity: 1;
-  color: rgba(205, 206, 214, var(--tw-text-opacity));
+  color: rgb(205 206 214 / var(--tw-text-opacity));
 }
 
 .text-\[\#e4e4e4\]{
   --tw-text-opacity: 1;
-  color: rgba(228, 228, 228, var(--tw-text-opacity));
+  color: rgb(228 228 228 / var(--tw-text-opacity));
 }
 
 .text-black{
   --tw-text-opacity: 1;
-  color: rgba(33, 43, 54, var(--tw-text-opacity));
+  color: rgb(33 43 54 / var(--tw-text-opacity));
 }
 
 .text-\[\#fbb040\]{
   --tw-text-opacity: 1;
-  color: rgba(251, 176, 64, var(--tw-text-opacity));
+  color: rgb(251 176 64 / var(--tw-text-opacity));
 }
 
 .text-\[\#969696\]{
   --tw-text-opacity: 1;
-  color: rgba(150, 150, 150, var(--tw-text-opacity));
+  color: rgb(150 150 150 / var(--tw-text-opacity));
 }
 
 .text-\[\#adadad\]{
   --tw-text-opacity: 1;
-  color: rgba(173, 173, 173, var(--tw-text-opacity));
+  color: rgb(173 173 173 / var(--tw-text-opacity));
 }
 
 .placeholder-white::-moz-placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
 .placeholder-white:-ms-input-placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
 .placeholder-white::placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-placeholder-opacity));
+  color: rgb(255 255 255 / var(--tw-placeholder-opacity));
 }
 
 .placeholder-\[\#ACB6BE\]::-moz-placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgba(172, 182, 190, var(--tw-placeholder-opacity));
+  color: rgb(172 182 190 / var(--tw-placeholder-opacity));
 }
 
 .placeholder-\[\#ACB6BE\]:-ms-input-placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgba(172, 182, 190, var(--tw-placeholder-opacity));
+  color: rgb(172 182 190 / var(--tw-placeholder-opacity));
 }
 
 .placeholder-\[\#ACB6BE\]::placeholder{
   --tw-placeholder-opacity: 1;
-  color: rgba(172, 182, 190, var(--tw-placeholder-opacity));
+  color: rgb(172 182 190 / var(--tw-placeholder-opacity));
 }
 
 .opacity-50{
@@ -1784,22 +1632,26 @@ video {
 }
 
 .shadow-lg{
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-md{
-  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-testimonial{
   --tw-shadow: 0px 60px 120px -20px #EBEFFD;
+  --tw-shadow-colored: 0px 60px 120px -20px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-pricing{
   --tw-shadow: 0px 39px 23px -27px rgba(0, 0, 0, 0.04);
+  --tw-shadow-colored: 0px 39px 23px -27px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1810,18 +1662,24 @@ video {
 
 .ring-primary{
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgba(48, 86, 211, var(--tw-ring-opacity));
+  --tw-ring-color: rgb(48 86 211 / var(--tw-ring-opacity));
 }
 
 .grayscale{
   --tw-grayscale: grayscale(100%);
-  filter: var(--tw-filter);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-\[top\]{
+  transition-property: top;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition{
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1841,12 +1699,11 @@ body {
 .sticky{
   position: fixed;
   z-index: 9999;
-  --tw-bg-opacity: 1;
-  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   --tw-bg-opacity: 0.8;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
   -webkit-backdrop-filter: blur(5px);
@@ -1854,19 +1711,24 @@ body {
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
 
+.sticky .navbar-logo{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .sticky #navbarToggler span{
   --tw-bg-opacity: 1;
-  background-color: rgba(9, 14, 52, var(--tw-bg-opacity));
+  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
 }
 
 .sticky #navbarCollapse li a{
   --tw-text-opacity: 1;
-  color: rgba(9, 14, 52, var(--tw-text-opacity));
+  color: rgb(9 14 52 / var(--tw-text-opacity));
 }
 
 .sticky #navbarCollapse li a:hover{
   --tw-text-opacity: 1;
-  color: rgba(48, 86, 211, var(--tw-text-opacity));
+  color: rgb(48 86 211 / var(--tw-text-opacity));
   opacity: 1;
 }
 
@@ -1876,40 +1738,39 @@ body {
 
 .sticky #navbarCollapse li .ud-menu-scroll.active{
   --tw-text-opacity: 1;
-  color: rgba(48, 86, 211, var(--tw-text-opacity));
+  color: rgb(48 86 211 / var(--tw-text-opacity));
   opacity: 1;
 }
 
 .sticky .loginBtn{
   --tw-text-opacity: 1;
-  color: rgba(9, 14, 52, var(--tw-text-opacity));
+  color: rgb(9 14 52 / var(--tw-text-opacity));
 }
 
 .sticky .loginBtn:hover{
   --tw-text-opacity: 1;
-  color: rgba(48, 86, 211, var(--tw-text-opacity));
+  color: rgb(48 86 211 / var(--tw-text-opacity));
   opacity: 1;
 }
 
 .sticky .signUpBtn{
   --tw-bg-opacity: 1;
-  background-color: rgba(48, 86, 211, var(--tw-bg-opacity));
+  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .sticky .signUpBtn:hover{
   --tw-bg-opacity: 1;
-  background-color: rgba(9, 14, 52, var(--tw-bg-opacity));
+  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .navbarTogglerActive > span:nth-child(1){
   top: 7px;
   --tw-rotate: 45deg;
-  transform: var(--tw-transform);
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .navbarTogglerActive > span:nth-child(2){
@@ -1919,84 +1780,84 @@ body {
 .navbarTogglerActive > span:nth-child(3){
   top: -8px;
   --tw-rotate: 135deg;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .after\:absolute::after{
-  content: "";
+  content: var(--tw-content);
   position: absolute;
 }
 
 .after\:right-1::after{
-  content: "";
+  content: var(--tw-content);
   right: 0.25rem;
 }
 
 .after\:top-1\/2::after{
-  content: "";
+  content: var(--tw-content);
   top: 50%;
 }
 
 .after\:mt-\[-2px\]::after{
-  content: "";
+  content: var(--tw-content);
   margin-top: -2px;
 }
 
 .after\:h-2::after{
-  content: "";
+  content: var(--tw-content);
   height: 0.5rem;
 }
 
 .after\:w-2::after{
-  content: "";
+  content: var(--tw-content);
   width: 0.5rem;
 }
 
 .after\:-translate-y-1\/2::after{
-  content: "";
+  content: var(--tw-content);
   --tw-translate-y: -50%;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .after\:rotate-45::after{
-  content: "";
+  content: var(--tw-content);
   --tw-rotate: 45deg;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .after\:border-b-2::after{
-  content: "";
+  content: var(--tw-content);
   border-bottom-width: 2px;
 }
 
 .after\:border-r-2::after{
-  content: "";
+  content: var(--tw-content);
   border-right-width: 2px;
 }
 
 .after\:border-current::after{
-  content: "";
+  content: var(--tw-content);
   border-color: currentColor;
 }
 
 .hover\:border-primary:hover{
   --tw-border-opacity: 1;
-  border-color: rgba(48, 86, 211, var(--tw-border-opacity));
+  border-color: rgb(48 86 211 / var(--tw-border-opacity));
 }
 
 .hover\:border-dark:hover{
   --tw-border-opacity: 1;
-  border-color: rgba(9, 14, 52, var(--tw-border-opacity));
+  border-color: rgb(9 14 52 / var(--tw-border-opacity));
 }
 
 .hover\:bg-primary:hover{
   --tw-bg-opacity: 1;
-  background-color: rgba(48, 86, 211, var(--tw-bg-opacity));
+  background-color: rgb(48 86 211 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-dark:hover{
   --tw-bg-opacity: 1;
-  background-color: rgba(9, 14, 52, var(--tw-bg-opacity));
+  background-color: rgb(9 14 52 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-100:hover{
@@ -2009,21 +1870,22 @@ body {
 
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
-  color: rgba(48, 86, 211, var(--tw-text-opacity));
+  color: rgb(48 86 211 / var(--tw-text-opacity));
 }
 
 .hover\:text-dark:hover{
   --tw-text-opacity: 1;
-  color: rgba(9, 14, 52, var(--tw-text-opacity));
+  color: rgb(9 14 52 / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
-  color: rgba(255, 255, 255, var(--tw-text-opacity));
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
-  text-decoration: underline;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .hover\:opacity-70:hover{
@@ -2035,12 +1897,14 @@ body {
 }
 
 .hover\:shadow-lg:hover{
-  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .hover\:shadow-md:hover{
-  --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -2050,12 +1914,12 @@ body {
 
 .focus\:border-white:focus{
   --tw-border-opacity: 1;
-  border-color: rgba(255, 255, 255, var(--tw-border-opacity));
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .focus\:border-primary:focus{
   --tw-border-opacity: 1;
-  border-color: rgba(48, 86, 211, var(--tw-border-opacity));
+  border-color: rgb(48 86 211 / var(--tw-border-opacity));
 }
 
 .focus\:outline-none:focus{
@@ -2071,28 +1935,29 @@ body {
 
 .focus-visible\:shadow-none:focus-visible{
   --tw-shadow: 0 0 #0000;
+  --tw-shadow-colored: 0 0 #0000;
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .group:hover .group-hover\:rotate-6{
   --tw-rotate: 6deg;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:rotate-45{
   --tw-rotate: 45deg;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:scale-125{
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
-  transform: var(--tw-transform);
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .group:hover .group-hover\:text-primary{
   --tw-text-opacity: 1;
-  color: rgba(48, 86, 211, var(--tw-text-opacity));
+  color: rgb(48 86 211 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:opacity-100{
@@ -2112,6 +1977,14 @@ body {
     padding: 3rem;
   }
 
+  .sm\:p-8{
+    padding: 2rem;
+  }
+
+  .sm\:p-10{
+    padding: 2.5rem;
+  }
+
   .sm\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
@@ -2125,6 +1998,11 @@ body {
   .sm\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .sm\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:text-4xl{
@@ -2200,6 +2078,14 @@ body {
 
   .md\:w-1\/3{
     width: 33.333333%;
+  }
+
+  .md\:w-7\/12{
+    width: 58.333333%;
+  }
+
+  .md\:w-5\/12{
+    width: 41.666667%;
   }
 
   .md\:justify-start{
@@ -2331,6 +2217,14 @@ body {
 
   .lg\:mb-11{
     margin-bottom: 2.75rem;
+  }
+
+  .lg\:ml-6{
+    margin-left: 1.5rem;
+  }
+
+  .lg\:ml-7{
+    margin-left: 1.75rem;
   }
 
   .lg\:block{
@@ -2533,7 +2427,7 @@ body {
 
   .lg\:text-white{
     --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .lg\:opacity-0{
@@ -2542,16 +2436,18 @@ body {
 
   .lg\:shadow-none{
     --tw-shadow: 0 0 #0000;
+    --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .lg\:shadow-lg{
-    --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
   .lg\:after\:right-0::after{
-    content: "";
+    content: var(--tw-content);
     right: 0px;
   }
 
@@ -2565,7 +2461,7 @@ body {
 
   .group:hover .lg\:group-hover\:text-white{
     --tw-text-opacity: 1;
-    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .group:hover .lg\:group-hover\:opacity-70{
