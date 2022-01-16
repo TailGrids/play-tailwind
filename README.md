@@ -10,7 +10,7 @@ Play crafted in a way that you can use with almost all sort of web project. This
 
 ### [⬇️ Download Now](https://links.tailgrids.com/play-download)
 
-[![play-tailwind](https://cdn.tailgrids.com/play-template.jpg)](https://play-tailwind.tailgrids.com/)
+[![play-tailwind](https://cdn.tailgrids.com/play-tailwind.jpg)](https://play-tailwind.tailgrids.com/)
 
 
 
