@@ -22,336 +22,135 @@
   <body>
     <!-- ====== Navbar Section Start -->
     <div
-      class="
-        ud-header
-        bg-transparent
-        absolute
-        top-0
-        left-0
-        z-40
-        w-full
-        flex
-        items-center
-      "
+      class="ud-header absolute top-0 left-0 z-40 flex w-full items-center bg-transparent"
     >
       <div class="container">
-        <div class="flex -mx-4 items-center justify-between relative">
-          <div class="px-4 w-60 max-w-full">
-            <a href="index.html" class="navbar-logo w-full block py-5">
+        <div class="relative -mx-4 flex items-center justify-between">
+          <div class="w-60 max-w-full px-4">
+            <a href="index.html" class="navbar-logo block w-full py-5">
               <img
                 src="assets/images/logo/logo-white.svg"
                 alt="logo"
-                class="w-full header-logo"
+                class="header-logo w-full"
               />
             </a>
           </div>
-          <div class="flex px-4 justify-between items-center w-full">
+          <div class="flex w-full items-center justify-between px-4">
             <div>
               <button
                 id="navbarToggler"
-                class="
-                  block
-                  absolute
-                  right-4
-                  top-1/2
-                  -translate-y-1/2
-                  lg:hidden
-                  focus:ring-2
-                  ring-primary
-                  px-3
-                  py-[6px]
-                  rounded-lg
-                "
+                class="absolute right-4 top-1/2 block -translate-y-1/2 rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
               >
                 <span
-                  class="relative w-[30px] h-[2px] my-[6px] block bg-white"
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
                 ></span>
                 <span
-                  class="relative w-[30px] h-[2px] my-[6px] block bg-white"
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
                 ></span>
                 <span
-                  class="relative w-[30px] h-[2px] my-[6px] block bg-white"
+                  class="relative my-[6px] block h-[2px] w-[30px] bg-white"
                 ></span>
               </button>
               <nav
                 id="navbarCollapse"
-                class="
-                  absolute
-                  py-5
-                  lg:py-0 lg:px-4
-                  xl:px-6
-                  bg-white
-                  lg:bg-transparent
-                  shadow-lg
-                  rounded-lg
-                  max-w-[250px]
-                  w-full
-                  lg:max-w-full lg:w-full
-                  right-4
-                  top-full
-                  hidden
-                  lg:block lg:static lg:shadow-none
-                "
+                class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:px-4 lg:shadow-none xl:px-6"
               >
                 <ul class="blcok lg:flex">
-                  <li class="relative group">
+                  <li class="group relative">
                     <a
                       href="#home"
-                      class="
-                        ud-menu-scroll
-                        text-base text-dark
-                        lg:text-white
-                        lg:group-hover:opacity-70
-                        lg:group-hover:text-white
-                        group-hover:text-primary
-                        py-2
-                        lg:py-6 lg:inline-flex lg:px-0
-                        flex
-                        mx-8
-                        lg:mr-0
-                      "
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
                     >
                       Home
                     </a>
                   </li>
-                  <li class="relative group">
+                  <li class="group relative">
                     <a
                       href="/#about"
-                      class="
-                        ud-menu-scroll
-                        text-base text-dark
-                        lg:text-white
-                        lg:group-hover:opacity-70
-                        lg:group-hover:text-white
-                        group-hover:text-primary
-                        py-2
-                        lg:py-6 lg:inline-flex lg:px-0
-                        flex
-                        mx-8
-                        lg:mr-0 lg:ml-7
-                        xl:ml-12
-                      "
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       About
                     </a>
                   </li>
-                  <li class="relative group">
+                  <li class="group relative">
                     <a
                       href="/#pricing"
-                      class="
-                        ud-menu-scroll
-                        text-base text-dark
-                        lg:text-white
-                        lg:group-hover:opacity-70
-                        lg:group-hover:text-white
-                        group-hover:text-primary
-                        py-2
-                        lg:py-6 lg:inline-flex lg:px-0
-                        flex
-                        mx-8
-                        lg:mr-0 lg:ml-7
-                        xl:ml-12
-                      "
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Pricing
                     </a>
                   </li>
-                  <li class="relative group">
+                  <li class="group relative">
                     <a
                       href="/#team"
-                      class="
-                        ud-menu-scroll
-                        text-base text-dark
-                        lg:text-white
-                        lg:group-hover:opacity-70
-                        lg:group-hover:text-white
-                        group-hover:text-primary
-                        py-2
-                        lg:py-6 lg:inline-flex lg:px-0
-                        flex
-                        mx-8
-                        lg:mr-0 lg:ml-7
-                        xl:ml-12
-                      "
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Team
                     </a>
                   </li>
-                  <li class="relative group">
+                  <li class="group relative">
                     <a
                       href="/#contact"
-                      class="
-                        ud-menu-scroll
-                        text-base text-dark
-                        lg:text-white
-                        lg:group-hover:opacity-70
-                        lg:group-hover:text-white
-                        group-hover:text-primary
-                        py-2
-                        lg:py-6 lg:inline-flex lg:px-0
-                        flex
-                        mx-8
-                        lg:mr-0 lg:ml-7
-                        xl:ml-12
-                      "
+                      class="ud-menu-scroll mx-8 flex py-2 text-base text-dark group-hover:text-primary lg:mr-0 lg:ml-7 lg:inline-flex lg:py-6 lg:px-0 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Contact
                     </a>
                   </li>
-                  <li class="relative group submenu-item">
+                  <li class="submenu-item group relative">
                     <a
                       href="javascript:void(0)"
-                      class="
-                        text-base text-dark
-                        lg:text-white
-                        lg:group-hover:opacity-70
-                        lg:group-hover:text-white
-                        group-hover:text-primary
-                        py-2
-                        lg:py-6 lg:inline-flex lg:pl-0 lg:pr-4
-                        flex
-                        mx-8
-                        lg:mr-0 lg:ml-8
-                        xl:ml-12
-                        relative
-                        after:absolute
-                        after:w-2
-                        after:h-2
-                        after:border-b-2
-                        after:border-r-2
-                        after:border-current
-                        after:rotate-45
-                        lg:after:right-0
-                        after:right-1
-                        after:top-1/2
-                        after:-translate-y-1/2
-                        after:mt-[-2px]
-                      "
+                      class="relative mx-8 flex py-2 text-base text-dark after:absolute after:right-1 after:top-1/2 after:mt-[-2px] after:h-2 after:w-2 after:-translate-y-1/2 after:rotate-45 after:border-b-2 after:border-r-2 after:border-current group-hover:text-primary lg:mr-0 lg:ml-8 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:after:right-0 lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-12"
                     >
                       Pages
                     </a>
                     <div
-                      class="
-                        submenu
-                        hidden
-                        relative
-                        lg:absolute
-                        w-[250px]
-                        top-full
-                        lg:top-[110%]
-                        left-0
-                        rounded-sm
-                        lg:shadow-lg
-                        p-4
-                        lg:block lg:opacity-0 lg:invisible
-                        group-hover:opacity-100
-                        lg:group-hover:visible lg:group-hover:top-full
-                        bg-white
-                        transition-[top]
-                        duration-300
-                      "
+                      class="submenu relative top-full left-0 hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
                     >
                       <a
                         href="about.html"
-                        class="
-                          block
-                          text-sm text-body-color
-                          rounded
-                          hover:text-primary
-                          py-[10px]
-                          px-4
-                        "
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
                       >
                         About Page
                       </a>
                       <a
                         href="pricing.html"
-                        class="
-                          block
-                          text-sm text-body-color
-                          rounded
-                          hover:text-primary
-                          py-[10px]
-                          px-4
-                        "
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
                       >
                         Pricing Page
                       </a>
                       <a
                         href="contact.html"
-                        class="
-                          block
-                          text-sm text-body-color
-                          rounded
-                          hover:text-primary
-                          py-[10px]
-                          px-4
-                        "
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
                       >
                         Contact Page
                       </a>
                       <a
                         href="blog-grids.html"
-                        class="
-                          block
-                          text-sm text-body-color
-                          rounded
-                          hover:text-primary
-                          py-[10px]
-                          px-4
-                        "
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
                       >
                         Blog Grid Page
                       </a>
                       <a
                         href="blog-details.html"
-                        class="
-                          block
-                          text-sm text-body-color
-                          rounded
-                          hover:text-primary
-                          py-[10px]
-                          px-4
-                        "
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
                       >
                         Blog Details Page
                       </a>
                       <a
                         href="signup.html"
-                        class="
-                          block
-                          text-sm text-body-color
-                          rounded
-                          hover:text-primary
-                          py-[10px]
-                          px-4
-                        "
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
                       >
                         Sign Up Page
                       </a>
                       <a
                         href="signin.html"
-                        class="
-                          block
-                          text-sm text-body-color
-                          rounded
-                          hover:text-primary
-                          py-[10px]
-                          px-4
-                        "
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
                       >
                         Sign In Page
                       </a>
                       <a
                         href="404.html"
-                        class="
-                          block
-                          text-sm text-body-color
-                          rounded
-                          hover:text-primary
-                          py-[10px]
-                          px-4
-                        "
+                        class="block rounded py-[10px] px-4 text-sm text-body-color hover:text-primary"
                       >
                         404 Page
                       </a>
@@ -360,36 +159,16 @@
                 </ul>
               </nav>
             </div>
-            <div class="sm:flex justify-end hidden pr-16 lg:pr-0">
+            <div class="hidden justify-end pr-16 sm:flex lg:pr-0">
               <a
                 href="signin.html"
-                class="
-                  text-base
-                  font-medium
-                  text-white
-                  hover:opacity-70
-                  py-3
-                  px-7
-                  loginBtn
-                "
+                class="loginBtn py-3 px-7 text-base font-medium text-white hover:opacity-70"
               >
                 Sign In
               </a>
               <a
                 href="signup.html"
-                class="
-                  text-base
-                  font-medium
-                  text-white
-                  bg-white bg-opacity-20
-                  rounded-lg
-                  py-3
-                  px-6
-                  hover:bg-opacity-100 hover:text-dark
-                  signUpBtn
-                  duration-300
-                  ease-in-out
-                "
+                class="signUpBtn rounded-lg bg-white bg-opacity-20 py-3 px-6 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
               >
                 Sign Up
               </a>
@@ -402,22 +181,13 @@
 
     <!-- ====== Banner Section Start -->
     <div
-      class="
-        relative
-        z-10
-        pt-[120px]
-        md:pt-[130px]
-        lg:pt-[160px]
-        pb-[100px]
-        bg-primary
-        overflow-hidden
-      "
+      class="relative z-10 overflow-hidden bg-primary pt-[120px] pb-[100px] md:pt-[130px] lg:pt-[160px]"
     >
       <div class="container">
-        <div class="flex flex-wrap items-center -mx-4">
+        <div class="-mx-4 flex flex-wrap items-center">
           <div class="w-full px-4">
             <div class="text-center">
-              <h1 class="font-semibold text-white text-4xl">Contact Page</h1>
+              <h1 class="text-4xl font-semibold text-white">Contact Page</h1>
             </div>
           </div>
         </div>
@@ -491,33 +261,17 @@
     <!-- ====== Banner Section End -->
 
     <!-- ====== Contact Start ====== -->
-    <section id="contact" class="ud-contact py-20 md:py-[120px] relative">
+    <section id="contact" class="ud-contact relative py-20 md:py-[120px]">
       <div
-        class="
-          absolute
-          z-[-1]
-          w-full
-          h-1/2
-          lg:h-[45%]
-          xl:h-1/2
-          bg-[#f3f4fe]
-          top-0
-          left-0
-        "
+        class="absolute top-0 left-0 z-[-1] h-1/2 w-full bg-[#f3f4fe] lg:h-[45%] xl:h-1/2"
       ></div>
       <div class="container px-4">
-        <div class="flex flex-wrap items-center -mx-4">
-          <div class="px-4 w-full lg:w-7/12 xl:w-8/12">
+        <div class="-mx-4 flex flex-wrap items-center">
+          <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div class="ud-contact-content-wrapper">
               <div class="ud-contact-title mb-12 lg:mb-[150px]">
                 <span
-                  class="
-                    font-headingFont
-                    text-dark
-                    font-semibold
-                    text-base
-                    mb-5
-                  "
+                  class="font-headingFont mb-5 text-base font-semibold text-dark"
                 >
                   CONTACT US
                 </span>
@@ -526,9 +280,9 @@
                   Love to hear from you!
                 </h2>
               </div>
-              <div class="flex flex-wrap justify-between mb-12 lg:mb-0">
-                <div class="flex max-w-full w-[330px] mb-8">
-                  <div class="text-[32px] text-primary mr-6">
+              <div class="mb-12 flex flex-wrap justify-between lg:mb-0">
+                <div class="mb-8 flex w-[330px] max-w-full">
+                  <div class="mr-6 text-[32px] text-primary">
                     <svg
                       width="29"
                       height="35"
@@ -544,14 +298,14 @@
                     </svg>
                   </div>
                   <div>
-                    <h5 class="text-lg font-semibold mb-6">Our Location</h5>
+                    <h5 class="mb-6 text-lg font-semibold">Our Location</h5>
                     <p class="text-base text-body-color">
                       401 Broadway, 24th Floor, Orchard Cloud View, London
                     </p>
                   </div>
                 </div>
-                <div class="flex max-w-full w-[330px] mb-8">
-                  <div class="text-[32px] text-primary mr-6">
+                <div class="mb-8 flex w-[330px] max-w-full">
+                  <div class="mr-6 text-[32px] text-primary">
                     <svg
                       width="34"
                       height="25"
@@ -564,7 +318,7 @@
                     </svg>
                   </div>
                   <div>
-                    <h5 class="text-lg font-semibold mb-6">How Can We Help?</h5>
+                    <h5 class="mb-6 text-lg font-semibold">How Can We Help?</h5>
                     <p class="text-base text-body-color">info@yourdomain.com</p>
                     <p class="text-base text-body-color">
                       contact@yourdomain.com
@@ -574,25 +328,12 @@
               </div>
             </div>
           </div>
-          <div class="px-4 w-full lg:w-5/12 xl:w-4/12">
+          <div class="w-full px-4 lg:w-5/12 xl:w-4/12">
             <div
-              class="
-                shadow-testimonial
-                rounded-lg
-                bg-white
-                py-10
-                px-8
-                md:p-[60px]
-                lg:p-10
-                2xl:p-[60px]
-                sm:py-12 sm:px-10
-                lg:py-12 lg:px-10
-                wow
-                fadeInUp
-              "
+              class="wow fadeInUp rounded-lg bg-white py-10 px-8 shadow-testimonial sm:py-12 sm:px-10 md:p-[60px] lg:p-10 lg:py-12 lg:px-10 2xl:p-[60px]"
               data-wow-delay=".2s"
             >
-              <h3 class="font-semibold mb-8 text-2xl md:text-[26px]">
+              <h3 class="mb-8 text-2xl font-semibold md:text-[26px]">
                 Send us a Message
               </h3>
               <form>
@@ -604,12 +345,7 @@
                     type="text"
                     name="fullName"
                     placeholder="Adam Gelius"
-                    class="
-                      w-full
-                      border-0 border-b border-[#f1f1f1]
-                      focus:border-primary focus:outline-none
-                      py-4
-                    "
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
                   />
                 </div>
                 <div class="mb-6">
@@ -620,12 +356,7 @@
                     type="email"
                     name="email"
                     placeholder="example@yourmail.com"
-                    class="
-                      w-full
-                      border-0 border-b border-[#f1f1f1]
-                      focus:border-primary focus:outline-none
-                      py-4
-                    "
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
                   />
                 </div>
                 <div class="mb-6">
@@ -636,12 +367,7 @@
                     type="text"
                     name="phone"
                     placeholder="+885 1254 5211 552"
-                    class="
-                      w-full
-                      border-0 border-b border-[#f1f1f1]
-                      focus:border-primary focus:outline-none
-                      py-4
-                    "
+                    class="w-full border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
                   />
                 </div>
                 <div class="mb-6">
@@ -652,34 +378,13 @@
                     name="message"
                     rows="1"
                     placeholder="type your message here"
-                    class="
-                      w-full
-                      border-0 border-b border-[#f1f1f1]
-                      focus:border-primary focus:outline-none
-                      py-4
-                      resize-none
-                    "
+                    class="w-full resize-none border-0 border-b border-[#f1f1f1] py-4 focus:border-primary focus:outline-none"
                   ></textarea>
                 </div>
                 <div class="mb-0">
                   <button
                     type="submit"
-                    class="
-                      inline-flex
-                      items-center
-                      justify-center
-                      py-4
-                      px-6
-                      rounded
-                      text-white
-                      bg-primary
-                      text-base
-                      font-medium
-                      hover:bg-dark
-                      transition
-                      duration-300
-                      ease-in-out
-                    "
+                    class="inline-flex items-center justify-center rounded bg-primary py-4 px-6 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-dark"
                   >
                     Send Message
                   </button>
@@ -694,16 +399,16 @@
 
     <!-- ====== Footer Section Start -->
     <footer
-      class="bg-black pt-20 lg:pt-[120px] relative z-10 wow fadeInUp"
+      class="wow fadeInUp relative z-10 bg-black pt-20 lg:pt-[120px]"
       data-wow-delay=".15s"
     >
       <div class="container">
-        <div class="flex flex-wrap -mx-4">
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12 px-4">
-            <div class="w-full mb-10">
+        <div class="-mx-4 flex flex-wrap">
+          <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
+            <div class="mb-10 w-full">
               <a
                 href="javascript:void(0)"
-                class="inline-block max-w-[160px] mb-6"
+                class="mb-6 inline-block max-w-[160px]"
               >
                 <img
                   src="assets/images/logo/logo-white.svg"
@@ -711,11 +416,11 @@
                   class="max-w-full"
                 />
               </a>
-              <p class="text-base text-[#f3f4fe] mb-7">
+              <p class="mb-7 text-base text-[#f3f4fe]">
                 We create digital experiences for brands and companies by using
                 technology.
               </p>
-              <div class="flex items-center -mx-3">
+              <div class="-mx-3 flex items-center">
                 <a
                   href="javascript:void(0)"
                   class="px-3 text-[#dddddd] hover:text-white"
@@ -785,20 +490,14 @@
               </div>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12 px-4">
-            <div class="w-full mb-10">
-              <h4 class="text-white text-lg font-semibold mb-9">About Us</h4>
+          <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
+            <div class="mb-10 w-full">
+              <h4 class="mb-9 text-lg font-semibold text-white">About Us</h4>
               <ul>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     Home
                   </a>
@@ -806,13 +505,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     Features
                   </a>
@@ -820,13 +513,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     About
                   </a>
@@ -834,13 +521,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     Testimonial
                   </a>
@@ -848,20 +529,14 @@
               </ul>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12 px-4">
-            <div class="w-full mb-10">
-              <h4 class="text-white text-lg font-semibold mb-9">Features</h4>
+          <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+            <div class="mb-10 w-full">
+              <h4 class="mb-9 text-lg font-semibold text-white">Features</h4>
               <ul>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     How it works
                   </a>
@@ -869,13 +544,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     Privacy policy
                   </a>
@@ -883,13 +552,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     Terms of Service
                   </a>
@@ -897,13 +560,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     Refund policy
                   </a>
@@ -911,22 +568,16 @@
               </ul>
             </div>
           </div>
-          <div class="w-full sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12 px-4">
-            <div class="w-full mb-10">
-              <h4 class="text-white text-lg font-semibold mb-9">
+          <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+            <div class="mb-10 w-full">
+              <h4 class="mb-9 text-lg font-semibold text-white">
                 Our Products
               </h4>
               <ul>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     LineIcons
                   </a>
@@ -934,13 +585,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     Ecommerce HTML
                   </a>
@@ -948,13 +593,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     Ayro UI
                   </a>
@@ -962,13 +601,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="
-                      inline-block
-                      text-base text-[#f3f4fe]
-                      hover:text-primary
-                      leading-loose
-                      mb-2
-                    "
+                    class="mb-2 inline-block text-base leading-loose text-[#f3f4fe] hover:text-primary"
                   >
                     PlainAdmin
                   </a>
@@ -976,23 +609,16 @@
               </ul>
             </div>
           </div>
-          <div class="w-full md:w-2/3 lg:w-6/12 xl:w-3/12 px-4">
-            <div class="w-full mb-10">
-              <h4 class="text-white text-lg font-semibold mb-9">Partners</h4>
+          <div class="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
+            <div class="mb-10 w-full">
+              <h4 class="mb-9 text-lg font-semibold text-white">Partners</h4>
               <ul class="flex flex-wrap items-center">
                 <li>
                   <a
                     href="https://tailgrids.com"
                     rel="nofollow noopner"
                     target="_blank"
-                    class="
-                      block
-                      mb-6
-                      mr-5
-                      max-w-[120px]
-                      xl:max-w-[100px]
-                      2xl:max-w-[120px]
-                    "
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
                       src="assets/images/footer/brands/tailgrids.svg"
@@ -1005,14 +631,7 @@
                     href="https://ayroui.com"
                     rel="nofollow noopner"
                     target="_blank"
-                    class="
-                      block
-                      mb-6
-                      mr-5
-                      max-w-[120px]
-                      xl:max-w-[100px]
-                      2xl:max-w-[120px]
-                    "
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
                       src="assets/images/footer/brands/ayroui.svg"
@@ -1025,14 +644,7 @@
                     href="https://ecommercehtml.com"
                     rel="nofollow noopner"
                     target="_blank"
-                    class="
-                      block
-                      mb-6
-                      mr-5
-                      max-w-[120px]
-                      xl:max-w-[100px]
-                      2xl:max-w-[120px]
-                    "
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
                       src="assets/images/footer/brands/ecommerce-html.svg"
@@ -1045,14 +657,7 @@
                     href="https://graygrids.com"
                     rel="nofollow noopner"
                     target="_blank"
-                    class="
-                      block
-                      mb-6
-                      mr-5
-                      max-w-[120px]
-                      xl:max-w-[100px]
-                      2xl:max-w-[120px]
-                    "
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
                       src="assets/images/footer/brands/graygrids.svg"
@@ -1065,14 +670,7 @@
                     href="https://lineicons.com"
                     rel="nofollow noopner"
                     target="_blank"
-                    class="
-                      block
-                      mb-6
-                      mr-5
-                      max-w-[120px]
-                      xl:max-w-[100px]
-                      2xl:max-w-[120px]
-                    "
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
                       src="assets/images/footer/brands/lineicons.svg"
@@ -1085,14 +683,7 @@
                     href="https://uideck.com"
                     rel="nofollow noopner"
                     target="_blank"
-                    class="
-                      block
-                      mb-6
-                      mr-5
-                      max-w-[120px]
-                      xl:max-w-[100px]
-                      2xl:max-w-[120px]
-                    "
+                    class="mb-6 mr-5 block max-w-[120px] xl:max-w-[100px] 2xl:max-w-[120px]"
                   >
                     <img
                       src="assets/images/footer/brands/uideck.svg"
@@ -1106,43 +697,37 @@
         </div>
       </div>
 
-      <div class="border-t border-opacity-40 py-8 mt-12 lg:mt-[60px]">
+      <div class="mt-12 border-t border-opacity-40 py-8 lg:mt-[60px]">
         <div class="container">
-          <div class="flex flex-wrap -mx-4">
-            <div class="w-full md:w-2/3 lg:w-1/2 px-4">
+          <div class="-mx-4 flex flex-wrap">
+            <div class="w-full px-4 md:w-2/3 lg:w-1/2">
               <div class="my-1">
                 <div
-                  class="
-                    flex
-                    items-center
-                    justify-center
-                    md:justify-start
-                    -mx-3
-                  "
+                  class="-mx-3 flex items-center justify-center md:justify-start"
                 >
                   <a
                     href="javascript:void(0)"
-                    class="text-base text-[#f3f4fe] hover:text-primary px-3"
+                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
                   >
                     Privacy policy
                   </a>
                   <a
                     href="javascript:void(0)"
-                    class="text-base text-[#f3f4fe] hover:text-primary px-3"
+                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
                   >
                     Legal notice
                   </a>
                   <a
                     href="javascript:void(0)"
-                    class="text-base text-[#f3f4fe] hover:text-primary px-3"
+                    class="px-3 text-base text-[#f3f4fe] hover:text-primary"
                   >
                     Terms of service
                   </a>
                 </div>
               </div>
             </div>
-            <div class="w-full md:w-1/3 lg:w-1/2 px-4">
-              <div class="flex justify-center md:justify-end my-1">
+            <div class="w-full px-4 md:w-1/3 lg:w-1/2">
+              <div class="my-1 flex justify-center md:justify-end">
                 <p class="text-base text-[#f3f4fe]">
                   Designed and Developed by
                   <a
@@ -1431,30 +1016,10 @@
     <!-- ====== Back To Top Start -->
     <a
       href="javascript:void(0)"
-      class="
-        hidden
-        items-center
-        justify-center
-        bg-primary
-        text-white
-        w-10
-        h-10
-        rounded-md
-        fixed
-        bottom-8
-        right-8
-        left-auto
-        z-[999]
-        hover:bg-dark
-        back-to-top
-        shadow-md
-        transition
-        duration-300
-        ease-in-out
-      "
+      class="back-to-top fixed bottom-8 right-8 left-auto z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
     >
       <span
-        class="w-3 h-3 border-t border-l border-white rotate-45 mt-[6px]"
+        class="mt-[6px] h-3 w-3 rotate-45 border-t border-l border-white"
       ></span>
     </a>
     <!-- ====== Back To Top End -->
