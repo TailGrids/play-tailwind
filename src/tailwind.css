@@ -4,8 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Inter", sans-serif;
+@layer  base {
+  body {
+    font-family: "Inter", sans-serif;
+  }
 }
 
 .sticky {
@@ -47,4 +49,19 @@ body {
 }
 .navbarTogglerActive > span:nth-child(3) {
   @apply top-[-8px] rotate-[135deg];
+}
+
+.common-carousel .swiper-button-next:after,
+.common-carousel .swiper-button-prev:after {
+  @apply hidden;
+}
+
+.common-carousel .swiper-button-next,
+.common-carousel .swiper-button-prev {
+  @apply !static h-12 w-12 rounded-lg bg-white shadow-testimonial-btn text-dark m-0 ease-out duration-200 hover:bg-primary hover:text-white hover:shadow-none;
+}
+
+.common-carousel .swiper-button-next svg,
+.common-carousel .swiper-button-prev svg {
+  @apply w-auto h-auto;
 }
