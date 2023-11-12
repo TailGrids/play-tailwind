@@ -1,6 +1,6 @@
 module.exports = {
   content: ["./*.html", "./assets/**/*.js"],
-
+  darkMode: "class",
   theme: {
     screens: {
       sm: "540px",
@@ -25,10 +25,17 @@ module.exports = {
     extend: {
       colors: {
         black: "#212b36",
-        dark: "#111928",
-        "dark-3": "#374151",
-        "dark-6": "#9CA3AF",
         "dark-700": "#090e34b3",
+        dark: {
+          DEFAULT: "#111928",
+          2: "#1F2A37",
+          3: "#374151",
+          4: "#4B5563",
+          5: "#6B7280",
+          6: "#9CA3AF",
+          7: "#D1D5DB",
+          8: "#E5E7EB",
+        },
         primary: "#3758F9",
         "blue-dark": "#1B44C8",
         secondary: "#13C296",

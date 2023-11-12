@@ -11,7 +11,7 @@
 }
 
 .sticky {
-  @apply fixed z-[9999] bg-white bg-opacity-80 transition;
+  @apply fixed z-[9999] bg-white/80 dark:bg-dark/80 transition;
   backdrop-filter: blur(5px);
   box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
 }
@@ -21,11 +21,11 @@
 }
 
 .sticky #navbarToggler span {
-  @apply bg-dark;
+  @apply bg-dark dark:bg-white;
 }
 
-.sticky #navbarCollapse li a {
-  @apply text-dark hover:text-primary hover:opacity-100;
+.sticky #navbarCollapse li > a {
+  @apply text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:opacity-100;
 }
 #navbarCollapse li .ud-menu-scroll.active {
   @apply opacity-70;
@@ -34,11 +34,15 @@
   @apply text-primary opacity-100;
 }
 .sticky .loginBtn {
-  @apply text-dark hover:text-primary hover:opacity-100;
+  @apply text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:opacity-100;
 }
 
 .sticky .signUpBtn {
-  @apply bg-primary text-white hover:bg-dark hover:text-white;
+  @apply bg-primary text-white hover:bg-blue-dark hover:text-white;
+}
+
+.sticky #themeSwitcher ~ span {
+  @apply text-dark dark:text-white;
 }
 
 .navbarTogglerActive > span:nth-child(1) {
@@ -58,7 +62,7 @@
 
 .common-carousel .swiper-button-next,
 .common-carousel .swiper-button-prev {
-  @apply !static h-12 w-12 rounded-lg bg-white shadow-testimonial-btn text-dark m-0 ease-out duration-200 hover:bg-primary hover:text-white hover:shadow-none;
+  @apply !static h-12 w-12 rounded-lg bg-white dark:bg-dark shadow-testimonial-btn text-dark dark:text-white m-0 ease-out duration-200 hover:bg-primary hover:text-white hover:shadow-none;
 }
 
 .common-carousel .swiper-button-next svg,
