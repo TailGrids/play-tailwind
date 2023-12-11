@@ -882,6 +882,14 @@ body {
   margin-right: 1.5rem;
 }
 
+.mt-0{
+  margin-top: 0px;
+}
+
+.mt-0\.5{
+  margin-top: 0.125rem;
+}
+
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -898,20 +906,16 @@ body {
   margin-top: 4rem;
 }
 
+.mt-8{
+  margin-top: 2rem;
+}
+
 .mt-\[60px\]{
   margin-top: 60px;
 }
 
 .mt-\[6px\]{
   margin-top: 6px;
-}
-
-.mt-5{
-  margin-top: 1.25rem;
-}
-
-.mt-8{
-  margin-top: 2rem;
 }
 
 .block{
@@ -1500,16 +1504,6 @@ body {
   padding: 1.25rem;
 }
 
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-.px-0\.5{
-  padding-left: 0.125rem;
-  padding-right: 0.125rem;
-}
-
 .px-1{
   padding-left: 0.25rem;
   padding-right: 0.25rem;
@@ -1868,16 +1862,16 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-white\/60{
+  color: rgb(255 255 255 / 0.6);
+}
+
 .text-opacity-70{
   --tw-text-opacity: 0.7;
 }
 
 .opacity-0{
   opacity: 0;
-}
-
-.opacity-50{
-  opacity: 0.5;
 }
 
 .shadow{
@@ -2252,10 +2246,6 @@ body {
 
 .hover\:underline:hover{
   text-decoration-line: underline;
-}
-
-.hover\:opacity-100:hover{
-  opacity: 1;
 }
 
 .hover\:opacity-70:hover{
