@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/animate.css" />
-    <link rel="stylesheet" href="assets/css/tailwind.css" />
+    <link rel="stylesheet" href="./src/css/tailwind.css" />
 
     <!-- ==== WOW JS ==== -->
     <script src="assets/js/wow.min.js"></script>
@@ -26,20 +26,20 @@
   <body>
     <!-- ====== Navbar Section Start -->
     <div
-      class="ud-header absolute left-0 top-0 z-40 flex w-full items-center bg-transparent"
+      class="absolute top-0 left-0 z-40 flex items-center w-full bg-transparent ud-header"
     >
-      <div class="container">
-        <div class="relative -mx-4 flex items-center justify-between">
-          <div class="w-60 max-w-full px-4">
-            <a href="index.html" class="navbar-logo block w-full py-5">
+      <div class="container px-4 mx-auto">
+        <div class="relative flex items-center justify-between -mx-4">
+          <div class="max-w-full px-4 w-60">
+            <a href="index.html" class="block w-full py-5 navbar-logo">
               <img
                 src="assets/images/logo/logo-white.svg"
                 alt="logo"
-                class="header-logo w-full"
+                class="w-full header-logo"
               />
             </a>
           </div>
-          <div class="flex w-full items-center justify-between px-4">
+          <div class="flex items-center justify-between w-full px-4">
             <div>
               <button
                 id="navbarToggler"
@@ -60,58 +60,58 @@
                 class="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-white py-5 shadow-lg dark:bg-dark-2 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:px-4 lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6"
               >
                 <ul class="blcok lg:flex 2xl:ml-20">
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
                       href="#home"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70"
                     >
                       Home
                     </a>
                   </li>
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
                       href="#about"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       About
                     </a>
                   </li>
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
                       href="#pricing"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       Pricing
                     </a>
                   </li>
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
                       href="#team"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       Team
                     </a>
                   </li>
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
                       href="#contact"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       Contact
                     </a>
                   </li>
-                  <li class="group relative">
+                  <li class="relative group">
                     <a
                       href="blog-grids.html"
-                      class="ud-menu-scroll mx-8 flex py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      class="flex py-2 mx-8 text-base font-medium ud-menu-scroll text-dark group-hover:text-primary dark:text-white lg:ml-7 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       Blog
                     </a>
                   </li>
-                  <li class="submenu-item group relative">
+                  <li class="relative submenu-item group">
                     <a
                       href="javascript:void(0)"
-                      class="relative mx-8 flex items-center justify-between py-2 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
+                      class="relative flex items-center justify-between py-2 mx-8 text-base font-medium text-dark group-hover:text-primary dark:text-white lg:ml-8 lg:mr-0 lg:inline-flex lg:py-6 lg:pl-0 lg:pr-4 lg:text-white lg:group-hover:text-white lg:group-hover:opacity-70 xl:ml-10"
                     >
                       Pages
 
@@ -129,53 +129,53 @@
                       </svg>
                     </a>
                     <div
-                      class="submenu relative left-0 top-full hidden w-[250px] rounded-sm bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
+                      class="submenu relative left-0 top-full hidden w-[250px] rounded-xs bg-white p-4 transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark-2 lg:invisible lg:absolute lg:top-[110%] lg:block lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full"
                     >
                       <a
                         href="about.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded-sm px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
                       >
                         About Page
                       </a>
                       <a
                         href="pricing.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded-sm px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
                       >
                         Pricing Page
                       </a>
                       <a
                         href="contact.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded-sm px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
                       >
                         Contact Page
                       </a>
                       <a
                         href="blog-grids.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded-sm px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
                       >
                         Blog Grid Page
                       </a>
                       <a
                         href="blog-details.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded-sm px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
                       >
                         Blog Details Page
                       </a>
                       <a
                         href="signup.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded-sm px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
                       >
                         Sign Up Page
                       </a>
                       <a
                         href="signin.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded-sm px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
                       >
                         Sign In Page
                       </a>
                       <a
                         href="404.html"
-                        class="block rounded px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
+                        class="block rounded-sm px-4 py-[10px] text-sm text-body-color hover:text-primary dark:text-dark-6 dark:hover:text-primary"
                       >
                         404 Page
                       </a>
@@ -187,7 +187,7 @@
             <div class="flex items-center justify-end pr-16 lg:pr-0">
               <label
                 for="themeSwitcher"
-                class="inline-flex cursor-pointer items-center"
+                class="inline-flex items-center cursor-pointer"
                 aria-label="themeSwitcher"
                 name="themeSwitcher"
               >
@@ -266,7 +266,7 @@
                 </a>
                 <a
                   href="signup.html"
-                  class="signUpBtn rounded-md bg-white bg-opacity-20 px-6 py-2 text-base font-medium text-white duration-300 ease-in-out hover:bg-opacity-100 hover:text-dark"
+                  class="px-6 py-2 text-base font-medium text-white duration-300 ease-in-out rounded-md bg-white/20 signUpBtn hover:bg-white/100 hover:text-dark"
                 >
                   Sign Up
                 </a>
@@ -283,8 +283,8 @@
       id="home"
       class="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
     >
-      <div class="container">
-        <div class="-mx-4 flex flex-wrap items-center">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full px-4">
             <div
               class="hero-content wow fadeInUp mx-auto max-w-[780px] text-center"
@@ -302,7 +302,7 @@
                 Technology - HTML Bootstrap, Tailwind and React NextJS.
               </p>
               <ul
-                class="mb-10 flex flex-wrap items-center justify-center gap-5"
+                class="flex flex-wrap items-center justify-center gap-5 mb-10"
               >
                 <li>
                   <a
@@ -342,16 +342,16 @@
                 </li>
               </ul>
               <div>
-                <p class="mb-4 text-center text-base font-medium text-white">
+                <p class="mb-4 text-base font-medium text-center text-white">
                   Built with latest technology
                 </p>
                 <div
-                  class="wow fadeInUp flex items-center justify-center gap-4 text-center"
+                  class="flex items-center justify-center gap-4 text-center wow fadeInUp"
                   data-wow-delay=".3s"
                 >
                   <a
                     href="https://github.com/uideck/play-bootstrap/"
-                    class="text-white/60 duration-300 ease-in-out hover:text-white"
+                    class="duration-300 ease-in-out text-white/60 hover:text-white"
                     target="_blank"
                   >
                     <svg
@@ -387,7 +387,7 @@
 
                   <a
                     href="https://github.com/TailGrids/play-tailwind/"
-                    class="text-white/60 duration-300 ease-in-out hover:text-white"
+                    class="duration-300 ease-in-out text-white/60 hover:text-white"
                     target="_blank"
                   >
                     <svg
@@ -421,7 +421,7 @@
 
                   <a
                     href="https://github.com/NextJSTemplates/play-nextjs"
-                    class="text-white/60 duration-300 ease-in-out hover:text-white"
+                    class="duration-300 ease-in-out text-white/60 hover:text-white"
                     target="_blank"
                   >
                     <svg
@@ -443,7 +443,7 @@
 
                   <a
                     href="https://github.com/TailGrids/play-astro/"
-                    class="text-white/60 duration-300 ease-in-out hover:text-white"
+                    class="duration-300 ease-in-out text-white/60 hover:text-white"
                     target="_blank"
                   >
                     <svg
@@ -476,7 +476,7 @@
 
                   <a
                     href="https://github.com/NextJSTemplates/play-nextjs"
-                    class="text-white/60 duration-300 ease-in-out hover:text-white"
+                    class="duration-300 ease-in-out text-white/60 hover:text-white"
                     target="_blank"
                   >
                     <svg
@@ -506,7 +506,7 @@
                 <img
                   src="assets/images/hero/hero-image.jpg"
                   alt="hero"
-                  class="mx-auto max-w-full rounded-t-xl rounded-tr-xl"
+                  class="max-w-full mx-auto rounded-t-xl rounded-tr-xl"
                 />
               </div>
               <div class="absolute -left-9 bottom-0 z-[-1]">
@@ -1658,11 +1658,11 @@
 
     <!-- ====== Features Section Start -->
     <section class="pb-8 pt-20 dark:bg-dark lg:pb-[70px] lg:pt-[120px]">
-      <div class="container">
-        <div class="-mx-4 flex flex-wrap">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4">
             <div class="mx-auto mb-12 max-w-[485px] text-center lg:mb-[70px]">
-              <span class="mb-2 block text-lg font-semibold text-primary">
+              <span class="block mb-2 text-lg font-semibold text-primary">
                 Features
               </span>
               <h2
@@ -1677,14 +1677,14 @@
             </div>
           </div>
         </div>
-        <div class="-mx-4 flex flex-wrap">
+        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4 md:w-1/2 lg:w-1/4">
-            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+            <div class="mb-12 wow fadeInUp group" data-wow-delay=".1s">
               <div
                 class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
               >
                 <span
-                  class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                  class="absolute left-0 top-0 -z-1 mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"
                 ></span>
                 <svg
                   width="37"
@@ -1714,12 +1714,12 @@
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/4">
-            <div class="wow fadeInUp group mb-12" data-wow-delay=".15s">
+            <div class="mb-12 wow fadeInUp group" data-wow-delay=".15s">
               <div
                 class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
               >
                 <span
-                  class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                  class="absolute left-0 top-0 -z-1 mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"
                 ></span>
                 <svg
                   width="36"
@@ -1749,12 +1749,12 @@
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/4">
-            <div class="wow fadeInUp group mb-12" data-wow-delay=".2s">
+            <div class="mb-12 wow fadeInUp group" data-wow-delay=".2s">
               <div
                 class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
               >
                 <span
-                  class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                  class="absolute left-0 top-0 -z-1 mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"
                 ></span>
                 <svg
                   width="37"
@@ -1816,12 +1816,12 @@
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/4">
-            <div class="wow fadeInUp group mb-12" data-wow-delay=".25s">
+            <div class="mb-12 wow fadeInUp group" data-wow-delay=".25s">
               <div
                 class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
               >
                 <span
-                  class="absolute left-0 top-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                  class="absolute left-0 top-0 -z-1 mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary/20 duration-300 group-hover:rotate-45"
                 ></span>
                 <svg
                   width="37"
@@ -1872,9 +1872,9 @@
       id="about"
       class="bg-gray-1 pb-8 pt-20 dark:bg-dark-2 lg:pb-[70px] lg:pt-[120px]"
     >
-      <div class="container">
+      <div class="container px-4 mx-auto">
         <div class="wow fadeInUp" data-wow-delay=".2s">
-          <div class="-mx-4 flex flex-wrap items-center">
+          <div class="flex flex-wrap items-center -mx-4">
             <div class="w-full px-4 lg:w-1/2">
               <div class="mb-12 max-w-[540px] lg:mb-0">
                 <h2
@@ -1898,7 +1898,7 @@
 
                 <a
                   href="javascript:void(0)"
-                  class="inline-flex items-center justify-center rounded-md border border-primary bg-primary px-7 py-3 text-center text-base font-medium text-white hover:border-blue-dark hover:bg-blue-dark"
+                  class="inline-flex items-center justify-center py-3 text-base font-medium text-center text-white border rounded-md border-primary bg-primary px-7 hover:border-blue-dark hover:bg-blue-dark"
                 >
                   Know More
                 </a>
@@ -1906,7 +1906,7 @@
             </div>
 
             <div class="w-full px-4 lg:w-1/2">
-              <div class="-mx-2 flex flex-wrap sm:-mx-4 lg:-mx-2 xl:-mx-4">
+              <div class="flex flex-wrap -mx-2 sm:-mx-4 lg:-mx-2 xl:-mx-4">
                 <div class="w-full px-2 sm:w-1/2 sm:px-4 lg:px-2 xl:px-4">
                   <div
                     class="mb-4 sm:mb-8 sm:h-[400px] md:h-[540px] lg:h-[400px] xl:h-[500px]"
@@ -1914,7 +1914,7 @@
                     <img
                       src="./assets/images/about/about-image-01.jpg"
                       alt="about image"
-                      class="h-full w-full object-cover object-center"
+                      class="object-cover object-center w-full h-full"
                     />
                   </div>
                 </div>
@@ -1926,7 +1926,7 @@
                     <img
                       src="./assets/images/about/about-image-02.jpg"
                       alt="about image"
-                      class="h-full w-full object-cover object-center"
+                      class="object-cover object-center w-full h-full"
                     />
                   </div>
 
@@ -1947,7 +1947,7 @@
                       </span>
                     </div>
                     <div>
-                      <span class="absolute left-0 top-0 -z-10">
+                      <span class="absolute top-0 left-0 -z-10">
                         <svg
                           width="106"
                           height="144"
@@ -1983,7 +1983,7 @@
                           </defs>
                         </svg>
                       </span>
-                      <span class="absolute right-0 top-0 -z-10">
+                      <span class="absolute top-0 right-0 -z-10">
                         <svg
                           width="130"
                           height="97"
@@ -2070,9 +2070,9 @@
     <section
       class="relative z-10 overflow-hidden bg-primary py-20 lg:py-[115px]"
     >
-      <div class="container mx-auto">
+      <div class="container px-4 mx-auto">
         <div class="relative overflow-hidden">
-          <div class="-mx-4 flex flex-wrap items-stretch">
+          <div class="flex flex-wrap items-stretch -mx-4">
             <div class="w-full px-4">
               <div class="mx-auto max-w-[570px] text-center">
                 <h2
@@ -2101,7 +2101,7 @@
         </div>
       </div>
       <div>
-        <span class="absolute left-0 top-0">
+        <span class="absolute top-0 left-0">
           <svg
             width="495"
             height="470"
@@ -2173,11 +2173,11 @@
       id="pricing"
       class="relative z-20 overflow-hidden bg-white pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]"
     >
-      <div class="container mx-auto">
-        <div class="-mx-4 flex flex-wrap">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4">
             <div class="mx-auto mb-[60px] max-w-[510px] text-center">
-              <span class="mb-2 block text-lg font-semibold text-primary">
+              <span class="block mb-2 text-lg font-semibold text-primary">
                 Pricing Table
               </span>
               <h2
@@ -2192,13 +2192,13 @@
             </div>
           </div>
         </div>
-        <div class="-mx-4 flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center -mx-4">
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div
-              class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
             >
               <span
-                class="mb-5 block text-xl font-medium text-dark dark:text-white"
+                class="block mb-5 text-xl font-medium text-dark dark:text-white"
               >
                 Starter
               </span>
@@ -2234,7 +2234,7 @@
               </div>
               <a
                 href="javascript:void(0)"
-                class="inline-block rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition hover:bg-blue-dark"
+                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
               >
                 Purchase Now
               </a>
@@ -2242,7 +2242,7 @@
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div
-              class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
             >
               <p
                 class="absolute right-[-50px] top-[60px] inline-block -rotate-90 rounded-bl-md rounded-tl-md bg-primary px-5 py-2 text-base font-medium text-white"
@@ -2250,7 +2250,7 @@
                 Recommended
               </p>
               <span
-                class="mb-5 block text-xl font-medium text-dark dark:text-white"
+                class="block mb-5 text-xl font-medium text-dark dark:text-white"
               >
                 Basic
               </span>
@@ -2286,7 +2286,7 @@
               </div>
               <a
                 href="javascript:void(0)"
-                class="inline-block rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition hover:bg-blue-dark"
+                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
               >
                 Purchase Now
               </a>
@@ -2294,10 +2294,10 @@
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
             <div
-              class="relative z-10 mb-10 overflow-hidden rounded-xl bg-white px-8 py-10 shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
+              class="relative z-10 px-8 py-10 mb-10 overflow-hidden bg-white rounded-xl shadow-pricing dark:bg-dark-2 sm:p-12 lg:px-6 lg:py-10 xl:p-14"
             >
               <span
-                class="mb-5 block text-xl font-medium text-dark dark:text-white"
+                class="block mb-5 text-xl font-medium text-dark dark:text-white"
               >
                 Premium
               </span>
@@ -2333,7 +2333,7 @@
               </div>
               <a
                 href="javascript:void(0)"
-                class="inline-block rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white transition hover:bg-blue-dark"
+                class="inline-block py-3 text-base font-medium text-center text-white transition rounded-md bg-primary px-7 hover:bg-blue-dark"
               >
                 Purchase Now
               </a>
@@ -2349,11 +2349,11 @@
       id="testimonials"
       class="overflow-hidden bg-gray-1 py-20 dark:bg-dark-2 md:py-[120px]"
     >
-      <div class="container mx-auto">
-        <div class="-mx-4 flex flex-wrap justify-center">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap justify-center -mx-4">
           <div class="w-full px-4">
             <div class="mx-auto mb-[60px] max-w-[485px] text-center">
-              <span class="mb-2 block text-lg font-semibold text-primary">
+              <span class="block mb-2 text-lg font-semibold text-primary">
                 Testimonials
               </span>
               <h2
@@ -2370,7 +2370,7 @@
         </div>
 
         <div class="-m-5">
-          <div class="swiper testimonial-carousel common-carousel p-5">
+          <div class="p-5 swiper testimonial-carousel common-carousel">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div
@@ -2740,11 +2740,11 @@
     <section
       class="relative z-20 overflow-hidden bg-white pb-8 pt-20 dark:bg-dark lg:pb-[50px] lg:pt-[120px]"
     >
-      <div class="container mx-auto">
-        <div class="-mx-4 flex flex-wrap">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4">
             <div class="mx-auto mb-[60px] max-w-[520px] text-center">
-              <span class="mb-2 block text-lg font-semibold text-primary">
+              <span class="block mb-2 text-lg font-semibold text-primary">
                 FAQ
               </span>
               <h2
@@ -2761,7 +2761,7 @@
             </div>
           </div>
         </div>
-        <div class="-mx-4 flex flex-wrap">
+        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4 lg:w-1/2">
             <div class="mb-12 flex lg:mb-[70px]">
               <div
@@ -2909,7 +2909,7 @@
         </div>
       </div>
       <div>
-        <span class="absolute left-4 top-4 -z-[1]">
+        <span class="absolute left-4 top-4 -z-1">
           <svg
             width="48"
             height="134"
@@ -3199,7 +3199,7 @@
             />
           </svg>
         </span>
-        <span class="absolute bottom-4 right-4 -z-[1]">
+        <span class="absolute bottom-4 right-4 -z-1">
           <svg
             width="48"
             height="134"
@@ -3498,11 +3498,11 @@
       id="team"
       class="overflow-hidden bg-gray-1 pb-12 pt-20 dark:bg-dark-2 lg:pb-[90px] lg:pt-[120px]"
     >
-      <div class="container mx-auto">
-        <div class="-mx-4 flex flex-wrap">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4">
             <div class="mx-auto mb-[60px] max-w-[485px] text-center">
-              <span class="mb-2 block text-lg font-semibold text-primary">
+              <span class="block mb-2 text-lg font-semibold text-primary">
                 Our Team Members
               </span>
               <h2
@@ -3517,10 +3517,10 @@
             </div>
           </div>
         </div>
-        <div class="-mx-4 flex flex-wrap justify-center">
+        <div class="flex flex-wrap justify-center -mx-4">
           <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
             <div
-              class="group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none"
+              class="px-5 pt-12 pb-10 mb-8 bg-white group rounded-xl shadow-testimonial dark:bg-dark dark:shadow-none"
             >
               <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                 <img
@@ -3529,10 +3529,10 @@
                   class="h-[120px] w-[120px] rounded-full"
                 />
                 <span
-                  class="absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full bg-secondary opacity-0 transition-all group-hover:opacity-100"
+                  class="absolute bottom-0 left-0 w-10 h-10 transition-all rounded-full opacity-0 -z-10 bg-secondary group-hover:opacity-100"
                 ></span>
                 <span
-                  class="absolute right-0 top-0 -z-10 opacity-0 transition-all group-hover:opacity-100"
+                  class="absolute top-0 right-0 transition-all opacity-0 -z-10 group-hover:opacity-100"
                 >
                   <svg
                     width="55"
@@ -3832,7 +3832,7 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
             <div
-              class="group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none"
+              class="px-5 pt-12 pb-10 mb-8 bg-white group rounded-xl shadow-testimonial dark:bg-dark dark:shadow-none"
             >
               <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                 <img
@@ -3841,10 +3841,10 @@
                   class="h-[120px] w-[120px] rounded-full"
                 />
                 <span
-                  class="absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full bg-secondary opacity-0 transition-all group-hover:opacity-100"
+                  class="absolute bottom-0 left-0 w-10 h-10 transition-all rounded-full opacity-0 -z-10 bg-secondary group-hover:opacity-100"
                 ></span>
                 <span
-                  class="absolute right-0 top-0 -z-10 opacity-0 transition-all group-hover:opacity-100"
+                  class="absolute top-0 right-0 transition-all opacity-0 -z-10 group-hover:opacity-100"
                 >
                   <svg
                     width="45"
@@ -4036,7 +4036,7 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
             <div
-              class="group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none"
+              class="px-5 pt-12 pb-10 mb-8 bg-white group rounded-xl shadow-testimonial dark:bg-dark dark:shadow-none"
             >
               <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                 <img
@@ -4045,10 +4045,10 @@
                   class="h-[120px] w-[120px] rounded-full"
                 />
                 <span
-                  class="absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full bg-secondary opacity-0 transition-all group-hover:opacity-100"
+                  class="absolute bottom-0 left-0 w-10 h-10 transition-all rounded-full opacity-0 -z-10 bg-secondary group-hover:opacity-100"
                 ></span>
                 <span
-                  class="absolute right-0 top-0 -z-10 opacity-0 transition-all group-hover:opacity-100"
+                  class="absolute top-0 right-0 transition-all opacity-0 -z-10 group-hover:opacity-100"
                 >
                   <svg
                     width="45"
@@ -4240,7 +4240,7 @@
           </div>
           <div class="w-full px-4 sm:w-1/2 lg:w-1/4 xl:w-1/4">
             <div
-              class="group mb-8 rounded-xl bg-white px-5 pb-10 pt-12 shadow-testimonial dark:bg-dark dark:shadow-none"
+              class="px-5 pt-12 pb-10 mb-8 bg-white group rounded-xl shadow-testimonial dark:bg-dark dark:shadow-none"
             >
               <div class="relative z-10 mx-auto mb-5 h-[120px] w-[120px]">
                 <img
@@ -4249,10 +4249,10 @@
                   class="h-[120px] w-[120px] rounded-full"
                 />
                 <span
-                  class="absolute bottom-0 left-0 -z-10 h-10 w-10 rounded-full bg-secondary opacity-0 transition-all group-hover:opacity-100"
+                  class="absolute bottom-0 left-0 w-10 h-10 transition-all rounded-full opacity-0 -z-10 bg-secondary group-hover:opacity-100"
                 ></span>
                 <span
-                  class="absolute right-0 top-0 -z-10 opacity-0 transition-all group-hover:opacity-100"
+                  class="absolute top-0 right-0 transition-all opacity-0 -z-10 group-hover:opacity-100"
                 >
                   <svg
                     width="45"
@@ -4449,11 +4449,11 @@
 
     <!-- ====== Blog Section Start -->
     <section class="bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]">
-      <div class="container mx-auto">
-        <div class="-mx-4 flex flex-wrap justify-center">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap justify-center -mx-4">
           <div class="w-full px-4">
             <div class="mx-auto mb-[60px] max-w-[485px] text-center">
-              <span class="mb-2 block text-lg font-semibold text-primary">
+              <span class="block mb-2 text-lg font-semibold text-primary">
                 Our Blogs
               </span>
               <h2
@@ -4468,9 +4468,9 @@
             </div>
           </div>
         </div>
-        <div class="-mx-4 flex flex-wrap">
+        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="wow fadeInUp group mb-10" data-wow-delay=".1s">
+            <div class="mb-10 wow fadeInUp group" data-wow-delay=".1s">
               <div class="mb-8 overflow-hidden rounded-[5px]">
                 <a href="blog-details.html" class="block">
                   <img
@@ -4489,7 +4489,7 @@
                 <h3>
                   <a
                     href="javascript:void(0)"
-                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                    class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
                   >
                     Meet AutoManage, the best AI management tools
                   </a>
@@ -4504,7 +4504,7 @@
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="wow fadeInUp group mb-10" data-wow-delay=".15s">
+            <div class="mb-10 wow fadeInUp group" data-wow-delay=".15s">
               <div class="mb-8 overflow-hidden rounded-[5px]">
                 <a href="blog-details.html" class="block">
                   <img
@@ -4523,7 +4523,7 @@
                 <h3>
                   <a
                     href="javascript:void(0)"
-                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                    class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
                   >
                     How to earn more money as a wellness coach
                   </a>
@@ -4538,7 +4538,7 @@
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div class="wow fadeInUp group mb-10" data-wow-delay=".2s">
+            <div class="mb-10 wow fadeInUp group" data-wow-delay=".2s">
               <div class="mb-8 overflow-hidden rounded-[5px]">
                 <a href="blog-details.html" class="block">
                   <img
@@ -4557,7 +4557,7 @@
                 <h3>
                   <a
                     href="javascript:void(0)"
-                    class="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                    class="inline-block mb-4 text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
                   >
                     The no-fuss guide to upselling and cross selling
                   </a>
@@ -4578,19 +4578,17 @@
 
     <!-- ====== Contact Start ====== -->
     <section id="contact" class="relative py-20 md:py-[120px]">
+      <div class="absolute top-0 left-0 w-full h-full -z-1 dark:bg-dark"></div>
       <div
-        class="absolute left-0 top-0 -z-[1] h-full w-full dark:bg-dark"
+        class="absolute left-0 top-0 -z-1 h-1/2 w-full bg-[#E9F9FF] dark:bg-dark-700 lg:h-[45%] xl:h-1/2"
       ></div>
-      <div
-        class="absolute left-0 top-0 -z-[1] h-1/2 w-full bg-[#E9F9FF] dark:bg-dark-700 lg:h-[45%] xl:h-1/2"
-      ></div>
-      <div class="container px-4">
-        <div class="-mx-4 flex flex-wrap items-center">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap items-center -mx-4">
           <div class="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div class="ud-contact-content-wrapper">
               <div class="ud-contact-title mb-12 lg:mb-[150px]">
                 <span
-                  class="mb-6 block text-base font-medium text-dark dark:text-white"
+                  class="block mb-6 text-base font-medium text-dark dark:text-white"
                 >
                   CONTACT US
                 </span>
@@ -4600,7 +4598,7 @@
                   Let's talk about your problem.
                 </h2>
               </div>
-              <div class="mb-12 flex flex-wrap justify-between lg:mb-0">
+              <div class="flex flex-wrap justify-between mb-12 lg:mb-0">
                 <div class="mb-8 flex w-[330px] max-w-full">
                   <div class="mr-6 text-[32px] text-primary">
                     <svg
@@ -4673,59 +4671,59 @@
                 <div class="mb-[22px]">
                   <label
                     for="fullName"
-                    class="mb-4 block text-sm text-body-color dark:text-dark-6"
+                    class="block mb-4 text-sm text-body-color dark:text-dark-6"
                     >Full Name*</label
                   >
                   <input
                     type="text"
                     name="fullName"
                     placeholder="Adam Gelius"
-                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
+                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-hidden dark:border-dark-3 dark:text-dark-6"
                   />
                 </div>
                 <div class="mb-[22px]">
                   <label
                     for="email"
-                    class="mb-4 block text-sm text-body-color dark:text-dark-6"
+                    class="block mb-4 text-sm text-body-color dark:text-dark-6"
                     >Email*</label
                   >
                   <input
                     type="email"
                     name="email"
                     placeholder="example@yourmail.com"
-                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
+                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-hidden dark:border-dark-3 dark:text-dark-6"
                   />
                 </div>
                 <div class="mb-[22px]">
                   <label
                     for="phone"
-                    class="mb-4 block text-sm text-body-color dark:text-dark-6"
+                    class="block mb-4 text-sm text-body-color dark:text-dark-6"
                     >Phone*</label
                   >
                   <input
                     type="text"
                     name="phone"
                     placeholder="+885 1254 5211 552"
-                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
+                    class="w-full border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-hidden dark:border-dark-3 dark:text-dark-6"
                   />
                 </div>
                 <div class="mb-[30px]">
                   <label
                     for="message"
-                    class="mb-4 block text-sm text-body-color dark:text-dark-6"
+                    class="block mb-4 text-sm text-body-color dark:text-dark-6"
                     >Message*</label
                   >
                   <textarea
                     name="message"
                     rows="1"
                     placeholder="type your message here"
-                    class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-none dark:border-dark-3 dark:text-dark-6"
+                    class="w-full resize-none border-0 border-b border-[#f1f1f1] bg-transparent pb-3 text-body-color placeholder:text-body-color/60 focus:border-primary focus:outline-hidden dark:border-dark-3 dark:text-dark-6"
                   ></textarea>
                 </div>
                 <div class="mb-0">
                   <button
                     type="submit"
-                    class="inline-flex items-center justify-center rounded-md bg-primary px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-blue-dark"
+                    class="inline-flex items-center justify-center px-10 py-3 text-base font-medium text-white transition duration-300 ease-in-out rounded-md bg-primary hover:bg-blue-dark"
                   >
                     Send
                   </button>
@@ -4740,9 +4738,9 @@
 
     <!-- ====== Brands Section Start -->
     <section class="pb-20 dark:bg-dark">
-      <div class="container px-4">
+      <div class="container px-4 mx-auto">
         <div
-          class="-mx-4 flex flex-wrap items-center justify-center gap-8 xl:gap-11"
+          class="flex flex-wrap items-center justify-center gap-8 -mx-4 xl:gap-11"
         >
           <a href="https://graygrids.com/">
             <img
@@ -4814,10 +4812,10 @@
       class="wow fadeInUp relative z-10 bg-[#090E34] pt-20 lg:pt-[100px]"
       data-wow-delay=".15s"
     >
-      <div class="container">
-        <div class="-mx-4 flex flex-wrap">
+      <div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -mx-4">
           <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-4/12 xl:w-3/12">
-            <div class="mb-10 w-full">
+            <div class="w-full mb-10">
               <a
                 href="javascript:void(0)"
                 class="mb-6 inline-block max-w-[160px]"
@@ -4832,7 +4830,7 @@
                 We create digital experiences for brands and companies by using
                 technology.
               </p>
-              <div class="-mx-3 flex items-center">
+              <div class="flex items-center -mx-3">
                 <a
                   href="javascript:void(0)"
                   class="px-3 text-gray-7 hover:text-white"
@@ -4911,13 +4909,13 @@
             </div>
           </div>
           <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-            <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-white">About Us</h4>
+            <div class="w-full mb-10">
+              <h4 class="text-lg font-semibold text-white mb-9">About Us</h4>
               <ul>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     Home
                   </a>
@@ -4925,7 +4923,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     Features
                   </a>
@@ -4933,7 +4931,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     About
                   </a>
@@ -4941,7 +4939,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     Testimonial
                   </a>
@@ -4950,13 +4948,13 @@
             </div>
           </div>
           <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
-            <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-white">Features</h4>
+            <div class="w-full mb-10">
+              <h4 class="text-lg font-semibold text-white mb-9">Features</h4>
               <ul>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     How it works
                   </a>
@@ -4964,7 +4962,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     Privacy policy
                   </a>
@@ -4972,7 +4970,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     Terms of Service
                   </a>
@@ -4980,7 +4978,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     Refund policy
                   </a>
@@ -4989,15 +4987,15 @@
             </div>
           </div>
           <div class="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
-            <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-white">
+            <div class="w-full mb-10">
+              <h4 class="text-lg font-semibold text-white mb-9">
                 Our Products
               </h4>
               <ul>
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     LineIcons
                   </a>
@@ -5005,7 +5003,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     Ecommerce HTML
                   </a>
@@ -5013,7 +5011,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     TailAdmin
                   </a>
@@ -5021,7 +5019,7 @@
                 <li>
                   <a
                     href="javascript:void(0)"
-                    class="mb-3 inline-block text-base text-gray-7 hover:text-primary"
+                    class="inline-block mb-3 text-base text-gray-7 hover:text-primary"
                   >
                     PlainAdmin
                   </a>
@@ -5030,14 +5028,14 @@
             </div>
           </div>
           <div class="w-full px-4 md:w-2/3 lg:w-6/12 xl:w-3/12">
-            <div class="mb-10 w-full">
-              <h4 class="mb-9 text-lg font-semibold text-white">Latest blog</h4>
+            <div class="w-full mb-10">
+              <h4 class="text-lg font-semibold text-white mb-9">Latest blog</h4>
               <div class="flex flex-col gap-8">
                 <a
                   href="blog-details.html"
                   class="group flex items-center gap-[22px]"
                 >
-                  <div class="overflow-hidden rounded">
+                  <div class="overflow-hidden rounded-sm">
                     <img
                       src="./assets/images/blog/blog-footer-01.jpg"
                       alt="blog"
@@ -5053,7 +5051,7 @@
                   href="blog-details.html"
                   class="group flex items-center gap-[22px]"
                 >
-                  <div class="overflow-hidden rounded">
+                  <div class="overflow-hidden rounded-sm">
                     <img
                       src="./assets/images/blog/blog-footer-02.jpg"
                       alt="blog"
@@ -5071,15 +5069,13 @@
         </div>
       </div>
 
-      <div
-        class="mt-12 border-t border-[#8890A4] border-opacity-40 py-8 lg:mt-[60px]"
-      >
-        <div class="container">
-          <div class="-mx-4 flex flex-wrap">
+      <div class="mt-12 border-t border-[#8890A4]/40 py-8 lg:mt-[60px]">
+        <div class="container px-4 mx-auto">
+          <div class="flex flex-wrap -mx-4">
             <div class="w-full px-4 md:w-2/3 lg:w-1/2">
               <div class="my-1">
                 <div
-                  class="-mx-3 flex items-center justify-center md:justify-start"
+                  class="flex items-center justify-center -mx-3 md:justify-start"
                 >
                   <a
                     href="javascript:void(0)"
@@ -5103,7 +5099,7 @@
               </div>
             </div>
             <div class="w-full px-4 md:w-1/3 lg:w-1/2">
-              <div class="my-1 flex justify-center md:justify-end">
+              <div class="flex justify-center my-1 md:justify-end">
                 <p class="text-base text-gray-7">
                   Designed and Developed by
                   <a
@@ -5392,7 +5388,7 @@
     <!-- ====== Back To Top Start -->
     <a
       href="javascript:void(0)"
-      class="back-to-top fixed bottom-8 left-auto right-8 z-[999] hidden h-10 w-10 items-center justify-center rounded-md bg-primary text-white shadow-md transition duration-300 ease-in-out hover:bg-dark"
+      class="fixed left-auto items-center justify-center hidden w-10 h-10 text-white transition duration-300 ease-in-out rounded-md shadow-md back-to-top bottom-8 right-8 z-999 bg-primary hover:bg-dark"
     >
       <span
         class="mt-[6px] h-3 w-3 rotate-45 border-l border-t border-white"
@@ -5404,13 +5400,13 @@
     <a
       target="_blank"
       rel="nofollow noopener"
-      class="fixed bottom-8 left-4 z-[999] inline-flex items-center gap-[10px] rounded-lg bg-white px-[14px] py-2 shadow-2 dark:bg-dark-2 sm:left-9"
+      class="fixed bottom-8 left-4 z-999 inline-flex items-center gap-[10px] rounded-lg bg-white px-[14px] py-2 shadow-2 dark:bg-dark-2 sm:left-9"
       href="https://tailgrids.com/"
     >
       <span class="text-base font-medium text-dark-3 dark:text-dark-6">
         Made with
       </span>
-      <span class="block h-4 w-px bg-stroke dark:bg-dark-3"></span>
+      <span class="block w-px h-4 bg-stroke dark:bg-dark-3"></span>
       <span class="block w-full max-w-[88px]">
         <img
           src="./assets/images/brands/tailgrids.svg"

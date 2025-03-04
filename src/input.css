@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap")
+layer(base);
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Screen Breakpoints */
+  --breakpoint-sm: 540px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 960px;
+  --breakpoint-xl: 1140px;
+  --breakpoint-2xl: 1320px;
+
+  /* Container Padding */
+  --container-padding: 16px;
+
+  /* Colors */
+  --color-black: #212b36;
+  --color-dark-700: #090e34b3;
+  --color-dark: #111928;
+  --color-dark-2: #1f2a37;
+  --color-dark-3: #374151;
+  --color-dark-4: #4b5563;
+  --color-dark-5: #6b7280;
+  --color-dark-6: #9ca3af;
+  --color-dark-7: #d1d5db;
+  --color-dark-8: #e5e7eb;
+  --color-primary: #3758f9;
+  --color-blue-dark: #1b44c8;
+  --color-secondary: #13c296;
+  --color-body-color: #637381;
+  --color-body-secondary: #8899a8;
+  --color-warning: #fbbf24;
+  --color-stroke: #dfe4ea;
+  --color-gray-1: #f9fafb;
+  --color-gray-2: #f3f4f6;
+  --color-gray-7: #ced4da;
+
+  /* Box Shadows */
+  --shadow-input: 0px 7px 20px rgba(0, 0, 0, 0.03);
+  --shadow-form: 0px 1px 55px -11px rgba(0, 0, 0, 0.01);
+  --shadow-pricing: 0px 0px 40px 0px rgba(0, 0, 0, 0.08);
+  --shadow-switch-1: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  --shadow-testimonial: 0px 10px 20px 0px rgba(92, 115, 160, 0.07);
+  --shadow-testimonial-btn: 0px 8px 15px 0px rgba(72, 72, 138, 0.08);
+  --shadow-1: 0px 1px 3px 0px rgba(166, 175, 195, 0.4);
+  --shadow-2: 0px 5px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+  }
+}
+
+.sticky {
+  @apply fixed transition z-9999 bg-white/80 dark:bg-dark/80;
+  backdrop-filter: blur(5px);
+  box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+
+.sticky .navbar-logo {
+  @apply py-2;
+}
+
+.sticky #navbarToggler span {
+  @apply bg-dark dark:bg-white;
+}
+
+.sticky #navbarCollapse li > a {
+  @apply text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:opacity-100;
+}
+#navbarCollapse li .ud-menu-scroll.active {
+  @apply opacity-70;
+}
+.sticky #navbarCollapse li .ud-menu-scroll.active {
+  @apply opacity-100 text-primary;
+}
+.sticky .loginBtn {
+  @apply text-dark dark:text-white hover:text-primary dark:hover:text-primary hover:opacity-100;
+}
+
+.sticky .signUpBtn {
+  @apply text-white bg-primary hover:bg-blue-dark hover:text-white;
+}
+
+.sticky #themeSwitcher ~ span {
+  @apply text-dark dark:text-white;
+}
+
+.navbarTogglerActive > span:nth-child(1) {
+  @apply top-[7px] rotate-45 transform;
+}
+.navbarTogglerActive > span:nth-child(2) {
+  @apply opacity-0;
+}
+.navbarTogglerActive > span:nth-child(3) {
+  @apply top-[-8px] rotate-[135deg];
+}
+
+.common-carousel .swiper-button-next:after,
+.common-carousel .swiper-button-prev:after {
+  @apply hidden;
+}
+
+.common-carousel .swiper-button-next,
+.common-carousel .swiper-button-prev {
+  @apply static! h-12 w-12 rounded-lg bg-white dark:bg-dark shadow-testimonial-btn text-dark dark:text-white m-0 ease-out duration-200 hover:bg-primary hover:text-white hover:shadow-none;
+}
+
+.common-carousel .swiper-button-next svg,
+.common-carousel .swiper-button-prev svg {
+  @apply w-auto h-auto;
+}
